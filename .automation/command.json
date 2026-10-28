@@ -1,13 +1,41 @@
 {
-  "token": "xs5-20261029-begin-02",
+  "token": "xs5-20261029-brief-request-01",
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
   "commands": [
     {
-      "script": "daily_update.py",
+      "script": "novel_state.py",
       "args": [
-        "--project",
-        ".",
-        "begin"
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH002_brief.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "林见微 周祈安 离婚 资料 权限 复核 验收 数量",
+        "--limit",
+        "10"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--query",
+        "离婚 股权 查阅权 付款 验收 梁予书",
+        "--out",
+        "drafts/CH002_author.md"
       ]
     }
   ]
