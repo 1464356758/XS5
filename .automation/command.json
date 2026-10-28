@@ -1,0 +1,14 @@
+{
+  "token": "xs5-20261029-begin-01",
+  "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
+  "commands": [
+    {
+      "script": "daily_update.py",
+      "args": [
+        "--project",
+        ".",
+        "begin"
+      ]
+    }
+  ]
+}

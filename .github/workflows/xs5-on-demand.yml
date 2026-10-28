@@ -1,0 +1,67 @@
+name: XS5 on-demand novel task executor
+on:
+  push:
+    paths:
+      - '.automation/command.json'
+permissions:
+  contents: write
+concurrency:
+  group: xs5-novel-command
+  cancel-in-progress: false
+jobs:
+  execute:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run verified repository tools
+        id: tool
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, sys, pathlib, datetime, traceback
+          root=pathlib.Path('.')
+          doc=json.loads(pathlib.Path('.automation/command.json').read_text(encoding='utf-8'))
+          assert doc.get('book_id')=='0ccf1f21-126e-4b70-a2c1-f823d5657e1d'
+          state=json.loads(pathlib.Path('book/state.json').read_text(encoding='utf-8'))
+          assert state.get('book_id')==doc['book_id']
+          commands=doc.get('commands',[])
+          assert 1<=len(commands)<=12
+          allowed={'daily_update.py','novel_state.py','online_state.py'}
+          output={'token':doc.get('token'),'results':[],'executed_at':datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          for cmd in commands:
+              script=cmd.get('script')
+              args=cmd.get('args',[])
+              assert script in allowed and isinstance(args,list) and all(isinstance(x,str) and len(x)<2000 for x in args)
+              p=subprocess.run(['python3','tools/'+script,*args],capture_output=True,text=True,timeout=120)
+              output['results'].append({'script':script,'args':args,'exit_code':p.returncode,'stdout':p.stdout[-20000:],'stderr':p.stderr[-20000:]})
+              if p.returncode:
+                  output['status']='blocked'
+                  break
+          else:
+              output['status']='completed'
+          pathlib.Path('.automation/result.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          if output['status']!='completed':
+              pathlib.Path('.automation/failed').write_text('blocked\n',encoding='utf-8')
+          PY
+      - name: Persist actual tool results
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A book/ .automation/result.json .automation/failed drafts/ online/index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "XS5: persist actual repository tool execution"
+            git push origin HEAD:main
+          fi
+      - name: Fail if tool failed
+        shell: bash
+        run: |
+          if test -f .automation/failed; then exit 1; fi
