@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 4,
+  "revision": 5,
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
-  "phase": "PLANNING",
+  "phase": "WAITING_NEXT",
   "platform": "dianzhong",
   "selected_topic": {
     "id": "T01",
@@ -23,7 +23,7 @@
   },
   "research_path": "research/platform_3982fc0ecf5afd7556238a2e8e0d599ba5b5409e060052ef0fffa4c5c699ef85.json",
   "topics_path": "research/topics_d2860999b0f5a2b020b2ad6e8cfaced82db09c1fb1339dd7f2f5d203cf73b552.json",
-  "chapter": 1,
+  "chapter": 2,
   "history": [
     {
       "at": "2026-10-28T09:15:52+00:00",
@@ -54,9 +54,15 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "已选定《离婚前夜，账本里多了一个死人》，准备长篇规划。"
+    },
+    {
+      "at": "2026-10-28T14:41:02+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "作者确认T01；第1章《签给死人的报告》已完成8615汉字审阅与冻结，未登记点众平台发布。"
     }
   ],
-  "detail": "已选定《离婚前夜，账本里多了一个死人》，准备长篇规划。",
-  "next_action": "建立作者设定、阶段因果、结局条件和近期3—5章路线。",
-  "updated_at": "2026-10-28T11:08:17+00:00"
+  "detail": "作者确认T01；第1章《签给死人的报告》已完成8615汉字审阅与冻结，未登记点众平台发布。",
+  "next_action": "只读第1章正文和记录，按章纲准备第2章《离婚不是注销权限》的任务书、合法资料核验与正文。",
+  "updated_at": "2026-10-28T14:41:02+00:00"
 }

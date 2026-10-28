@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
   "title": "离婚前夜，账本里多了一个死人",
-  "revision": 3,
+  "revision": 4,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -21,7 +21,18 @@
     "opening_impact_max_han": 3000,
     "narrative_review_required": true
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "签给死人的报告",
+      "stage": "S01",
+      "text_path": "chapters/CH001_ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed.txt",
+      "text_sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+      "record_path": "records/CH001_ae9657cbb89f9303c713c90418ccad5de318867a58c291c2c4b7dae5e02897f8.json",
+      "record_sha256": "ae9657cbb89f9303c713c90418ccad5de318867a58c291c2c4b7dae5e02897f8",
+      "han_count": 8615,
+      "adopted_at": "2026-10-28T14:39:25+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -52,15 +63,126 @@
       "reason": "按作者委托选定T01后的100章五幕路线和近期五章计划"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "8d262c71-d59f-4954-88ab-276457505ccb",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "adopted",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+          "reason": "根据作者确认的点众文学T01题材开始第一章",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+      "candidate_path": "candidates/CH001_ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+        "record_sha256": "ae9657cbb89f9303c713c90418ccad5de318867a58c291c2c4b7dae5e02897f8"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_2cde1e6d2c4b218afa7dd419aff0285c519d9d04d9d628abc10f3c3c906094b2.json",
+        "sha256": "2cde1e6d2c4b218afa7dd419aff0285c519d9d04d9d628abc10f3c3c906094b2",
+        "used": true
+      }
+    },
+    "promises": {
+      "P001": {
+        "history": [
+          {
+            "id": "P001",
+            "action": "set",
+            "deadline_chapter": 10,
+            "reason": "报告署名与死亡时间已经冲突，但还缺原件授权链；第一阶段第10章前核实是否存在后补/复用。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+              "quote": "冯启怀七年前去世了。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 10,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P002": {
+        "history": [
+          {
+            "id": "P002",
+            "action": "set",
+            "deadline_chapter": 20,
+            "reason": "离婚与合伙资料未齐，女主拒签并正式申请核对；第20章前把权益与业务调查彻底分流。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+              "quote": "资料不足，不能判断。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 20,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P003": {
+        "history": [
+          {
+            "id": "P003",
+            "action": "set",
+            "deadline_chapter": 3,
+            "reason": "已经与梁予书约定次日面谈，适合最迟第3章兑现会面和可核查的采购线索。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+              "quote": "可以谈，不发原件。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 3,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P004": {
+        "history": [
+          {
+            "id": "P004",
+            "action": "set",
+            "deadline_chapter": 5,
+            "reason": "新工程待付款现状出现，首五章内应进一步核验验收数量或合法资料来源，不只重复提示报告存在。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "ef76136697e52e061e2f8179e7bda312ac6e624083e05767488c71fe979842ed",
+              "quote": "本次提交用于新城东片区设备更新工程阶段性款项核拨"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 5,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
+  },
+  "writing_briefs": {
+    "1": {
+      "path": "briefs/CH001_43c92b69fd57c0768516b94c924fdbc8bf3f6b2d35441022ac02c52232efd3a7.json",
+      "sha256": "43c92b69fd57c0768516b94c924fdbc8bf3f6b2d35441022ac02c52232efd3a7"
+    }
   }
 }
