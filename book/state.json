@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
-  "title": "未命名小说",
-  "revision": 0,
+  "title": "离婚前夜，账本里多了一个死人",
+  "revision": 3,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -24,8 +24,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_e39b07cd9b0df3fbeeae5ff0e5523358df55aa2ba957992b4a8eedbc6b0a7ad8.md",
+      "sha256": "e39b07cd9b0df3fbeeae5ff0e5523358df55aa2ba957992b4a8eedbc6b0a7ad8",
+      "reason": "用户指定点众文学并授权择题后的首次人物与世界设定"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_bf64a71730304834a94387b3a9d632997b03fd79b80631b187461d3521f78efb.md",
+      "sha256": "bf64a71730304834a94387b3a9d632997b03fd79b80631b187461d3521f78efb",
+      "reason": "按作者委托选定T01后的100章五幕路线和近期五章计划"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_e39b07cd9b0df3fbeeae5ff0e5523358df55aa2ba957992b4a8eedbc6b0a7ad8.md",
+      "sha256": "e39b07cd9b0df3fbeeae5ff0e5523358df55aa2ba957992b4a8eedbc6b0a7ad8",
+      "reason": "用户指定点众文学并授权择题后的首次人物与世界设定"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_bf64a71730304834a94387b3a9d632997b03fd79b80631b187461d3521f78efb.md",
+      "sha256": "bf64a71730304834a94387b3a9d632997b03fd79b80631b187461d3521f78efb",
+      "reason": "按作者委托选定T01后的100章五幕路线和近期五章计划"
+    }
+  ],
   "tasks": {},
   "completion": null,
   "serialization": {

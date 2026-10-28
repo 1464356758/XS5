@@ -1,0 +1,401 @@
+{
+  "platform": "dianzhong",
+  "checked_at": "2026-10-28T11:08:12+00:00",
+  "coverage_status": "partial",
+  "methodology": "点众文学网（wx.dianzhong.com/ssread.cn）为创作平台；点众阅读（ishugui.com）为关联阅读渠道，榜单仅作受众线索，严禁等同平台长篇入库榜。日榜值仅为本次访问快照，原始更新日期未见明确说明；不推断真实销售额/留存。",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "点众科技官方产品介绍",
+      "url": "https://dianzhong.com/m-products.html",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方公司"
+    },
+    {
+      "id": "S02",
+      "title": "点众文学网首页：24小时销售/完结销售/打赏/新书榜",
+      "url": "https://wx.dianzhong.com/",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方文学站"
+    },
+    {
+      "id": "S03",
+      "title": "点众文学作者福利（页面注明2025-04-01生效）",
+      "url": "https://www.ssread.cn/index/welfare",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方作者福利"
+    },
+    {
+      "id": "S04",
+      "title": "点众文学作者帮助：创建作品",
+      "url": "https://wx.dianzhong.com/public/pre_help_create.html",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方作者帮助"
+    },
+    {
+      "id": "S05",
+      "title": "点众文学创作者平台登录入口",
+      "url": "https://dznovel.ssread.cn/",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方作者后台；登录所限"
+    },
+    {
+      "id": "S06",
+      "title": "点众阅读男生畅销榜（频道样本，并非文学站长篇新书榜）",
+      "url": "https://www.ishugui.com/ranking",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品公开榜单"
+    },
+    {
+      "id": "S07",
+      "title": "点众阅读女生畅销榜（频道样本，并非文学站长篇新书榜）",
+      "url": "https://www.ishugui.com/ranking/2-2",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品公开榜单"
+    },
+    {
+      "id": "S08",
+      "title": "点众阅读男生新书榜",
+      "url": "https://www.ishugui.com/ranking/1-5",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品公开榜单"
+    },
+    {
+      "id": "S09",
+      "title": "点众阅读女生新书榜",
+      "url": "https://www.ishugui.com/ranking/2-6",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品公开榜单"
+    },
+    {
+      "id": "S10",
+      "title": "点众文学网首发连载《重生赐婚宴，渣男太子喊我小皇婶》",
+      "url": "https://www.ssread.cn/book/index/id/27053",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方站作品详情"
+    },
+    {
+      "id": "S11",
+      "title": "点众文学《樱花依旧开（第二版）》详情",
+      "url": "https://wx.dianzhong.com/book/index/id/5527",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "官方站作品详情"
+    },
+    {
+      "id": "S12",
+      "title": "点众阅读《他亲手摘下了月亮，却又打碎了她》详情",
+      "url": "https://www.ishugui.com/book/11010563902",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S13",
+      "title": "点众阅读《懒癌金丝雀退位后，港圈太子爷悔疯了》详情",
+      "url": "https://www.ishugui.com/book/11010570733",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S14",
+      "title": "点众阅读《婚礼当天，我死在未婚夫女兄弟的庆祝玩笑里》详情",
+      "url": "https://www.ishugui.com/book/11010564487",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S15",
+      "title": "点众阅读《独占白月光》详情",
+      "url": "https://www.ishugui.com/book/11010570848",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S16",
+      "title": "点众阅读《嫌我丑把我推下直升机，我恢复真容后，你怎么后悔了》详情",
+      "url": "https://www.ishugui.com/book/11010543173",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S17",
+      "title": "点众阅读《蓝色是深海，不是爱情》详情",
+      "url": "https://www.ishugui.com/book/11010570126",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S18",
+      "title": "点众阅读《那场雨落下时，我决定不回头》详情",
+      "url": "https://www.ishugui.com/book/11010569682",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S19",
+      "title": "点众阅读《白月光替身才不要爱》详情",
+      "url": "https://www.ishugui.com/book/11010570273",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    },
+    {
+      "id": "S20",
+      "title": "点众阅读《无性婚姻第五年妻子怀孕，我却不吵不闹替她养胎》详情",
+      "url": "https://www.ishugui.com/book/11010570609",
+      "accessed_at": "2026-10-28T11:08:12+00:00",
+      "kind": "关联阅读产品作品详情"
+    }
+  ],
+  "rules": [
+    {
+      "topic": "平台身份与题材覆盖",
+      "status": "verified",
+      "source_id": "S01",
+      "conclusion": "点众文学为点众科技旗下原创作品发布平台；官方点众阅读涵盖都市、玄幻、穿越、言情等类型。"
+    },
+    {
+      "topic": "创作与发布",
+      "status": "verified",
+      "source_id": "S04",
+      "conclusion": "官网作者帮助说明登录作者专区、在作品列表添加作品；章节审核约1至2天，为帮助页现有表述，不当作即时服务承诺。"
+    },
+    {
+      "topic": "作者后台与账号",
+      "status": "verified",
+      "source_id": "S05",
+      "conclusion": "作者专区入口可见，并跳转至dznovel.ssread.cn；登录后后台流程此次未核查。"
+    },
+    {
+      "topic": "独家首发与投稿限制",
+      "status": "verified",
+      "source_id": "S04",
+      "conclusion": "官方帮助对“专属作品”作独家发布授权说明，撤销委托前不得再投其他媒体；是否适用于本书、版权具体边界以最终合同为准。"
+    },
+    {
+      "topic": "签约类别与收益",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "作者福利列“保底+超保底分成”及“纯分成”两种模式；书面合同决定具体报酬，公开数字不代表保证签约。"
+    },
+    {
+      "topic": "更新与全勤",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "福利页面当前载明独家分成作者满足条件可申领全勤，含每日有效更新不少于4000字、自然月不少于12万字等限制；是福利条件，不是所有作品的强制写作标准。"
+    },
+    {
+      "topic": "版权与改编可能性",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "作者福利页提及有声、影视与微短剧版权衍生方向；“有机会”不等于保证改编。"
+    },
+    {
+      "topic": "禁止侵权和灌水",
+      "status": "verified",
+      "source_id": "S03",
+      "conclusion": "福利页将抄袭、侵犯他人版权、大量重复填充、粘贴资料等列为可能取消福利的情形。"
+    },
+    {
+      "topic": "AI辅助写作或AI生成的具体政策",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "已查的公开作者帮助和福利页未检索到可核实的点众文学AI辅助写作独立条款；签约或正式投稿前需要作者向平台/编辑确认。不把未公开视为许可。"
+    },
+    {
+      "topic": "新书入库门槛、保底字数及2026新增征稿口径",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "创作者后台登录页无法公开读取完整管理办法，未核实最低签约字数、投稿材料及2026征稿细则。"
+    },
+    {
+      "topic": "90万字长篇与榜单热门短篇的匹配",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "点众阅读关联产品当前热门榜以1至2万字短篇为主；其热度只能证明短篇钩子的吸引力，不等于90万字长篇的推荐机制相同。"
+    }
+  ],
+  "rank_samples": [
+    {
+      "title": "他亲手摘下了月亮，却又打碎了她",
+      "author": "林夏",
+      "list_name": "点众阅读·女生畅销日榜",
+      "rank": 1,
+      "genre": "精品短篇·都市情感",
+      "source_id": "S07",
+      "book_url": "https://www.ishugui.com/book/11010563902",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "154万热度（观察快照）",
+      "opening_mechanism": "被操控后的觉醒、关系真相与离开",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "懒癌金丝雀退位后，港圈太子爷悔疯了",
+      "author": "元期期",
+      "list_name": "点众阅读·女生畅销日榜",
+      "rank": 2,
+      "genre": "精品短篇·都市情感",
+      "source_id": "S07",
+      "book_url": "https://www.ishugui.com/book/11010570733",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "145万热度（观察快照）",
+      "opening_mechanism": "反常规女主人设、平静退出与身份价值反转",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "婚礼当天，我死在未婚夫女兄弟的庆祝玩笑里",
+      "author": "昭砚",
+      "list_name": "点众阅读·女生畅销日榜",
+      "rank": 3,
+      "genre": "精品短篇·婚恋虐恋",
+      "source_id": "S07",
+      "book_url": "https://www.ishugui.com/book/11010564487",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "145万热度（观察快照）",
+      "opening_mechanism": "极端关系伤害引发高强度情绪",
+      "word_count_display": "约1万字"
+    },
+    {
+      "title": "独占白月光",
+      "author": "橘子",
+      "list_name": "点众阅读·女生畅销日榜",
+      "rank": 4,
+      "genre": "精品短篇·豪门替身",
+      "source_id": "S07",
+      "book_url": "https://www.ishugui.com/book/11010570848",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "145万热度（观察快照）",
+      "opening_mechanism": "替身与真正关系的身份反转",
+      "word_count_display": "约1万字"
+    },
+    {
+      "title": "嫌我丑把我推下直升机，我恢复真容后，你怎么后悔了",
+      "author": "容笙",
+      "list_name": "点众阅读·女生畅销日榜",
+      "rank": 5,
+      "genre": "精品短篇·职场/情感",
+      "source_id": "S07",
+      "book_url": "https://www.ishugui.com/book/11010543173",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "142万热度（观察快照）",
+      "opening_mechanism": "离开旧关系、职业身份与后悔反差",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "蓝色是深海，不是爱情",
+      "author": "呀芽亚压",
+      "list_name": "点众阅读·男生畅销日榜",
+      "rank": 1,
+      "genre": "精品故事·男主婚恋",
+      "source_id": "S06",
+      "book_url": "https://www.ishugui.com/book/11010570126",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "130万热度（观察快照）",
+      "opening_mechanism": "被利用的亲密关系与断舍离",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "那场雨落下时，我决定不回头",
+      "author": "旺仔罐罐",
+      "list_name": "点众阅读·男生畅销日榜",
+      "rank": 2,
+      "genre": "精品故事·亲情反击",
+      "source_id": "S06",
+      "book_url": "https://www.ishugui.com/book/11010569682",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "121万热度（观察快照）",
+      "opening_mechanism": "家庭资源失衡、主角边界觉醒",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "白月光替身才不要爱",
+      "author": "千山月",
+      "list_name": "点众阅读·男生畅销日榜",
+      "rank": 3,
+      "genre": "精品故事·都市成长",
+      "source_id": "S06",
+      "book_url": "https://www.ishugui.com/book/11010570273",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "118万热度（观察快照）",
+      "opening_mechanism": "男主以现实目标对抗替身羞辱",
+      "word_count_display": "约1万字"
+    },
+    {
+      "title": "无性婚姻第五年妻子怀孕，我却不吵不闹替她养胎",
+      "author": "山野来信",
+      "list_name": "点众阅读·男生畅销日榜",
+      "rank": 4,
+      "genre": "精品故事·婚姻反击",
+      "source_id": "S06",
+      "book_url": "https://www.ishugui.com/book/11010570609",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "117万热度（观察快照）",
+      "opening_mechanism": "静默布局与最后清算",
+      "word_count_display": "约2万字"
+    },
+    {
+      "title": "樱花依旧开（第二版）",
+      "author": "陆月樱",
+      "list_name": "点众文学网·热门新书榜",
+      "rank": 1,
+      "genre": "文学站·情感/成长",
+      "source_id": "S02",
+      "book_url": "https://wx.dianzhong.com/book/index/id/5527",
+      "observed_at": "2026-10-28T11:08:12+00:00",
+      "visible_metric": "27万字（页面展示，非热度）",
+      "opening_mechanism": "人物关系与成长议题",
+      "word_count_display": "27万字"
+    }
+  ],
+  "genre_observations": [
+    {
+      "genre": "现代婚恋反转/离婚觉醒",
+      "signal": "点众阅读男女畅销榜多个高位短篇均有关系背叛、退出与后悔线索",
+      "evidence": [
+        "S06",
+        "S07"
+      ],
+      "limitation": "短篇为主，长篇是否同样受欢迎未知"
+    },
+    {
+      "genre": "女性独立成长+悬疑商战",
+      "signal": "从婚姻反击情绪借力，以职业能力、调查证据与商战对抗支撑90万字，是原创编辑策略而非已验证的点众独立榜单趋势",
+      "evidence": [
+        "S07",
+        "S01"
+      ],
+      "limitation": "需要真实审稿验证悬疑因果与职业细节"
+    },
+    {
+      "genre": "古言重生/逆袭/先婚后爱",
+      "signal": "点众文学网存在相关连载作品，与平台古言分类一致",
+      "evidence": [
+        "S01",
+        "S10"
+      ],
+      "limitation": "并非本次榜单头部指标"
+    },
+    {
+      "genre": "现实与历史、运动成长",
+      "signal": "点众文学网展示历史竞技与现实题材的24小时销售及完结作品，仍需辨别首页固定推荐与真实更新",
+      "evidence": [
+        "S02"
+      ],
+      "limitation": "首页可能长期不更新，不能当作2026热门增长趋势"
+    },
+    {
+      "genre": "都市逆袭/玄幻仙侠",
+      "signal": "官方产品说明与文学站分类覆盖",
+      "evidence": [
+        "S01",
+        "S02"
+      ],
+      "limitation": "没有足够新书长篇榜位证明头部表现"
+    }
+  ],
+  "decision": "首推T01：现代都市女性逆袭+婚姻觉醒+商业悬疑。将短篇强情绪开篇转化为可持续90万字的职业与调查主线，并保留跨题材候选供比较。",
+  "gaps": [
+    "官方作者后台登录后2026最新签约流程、投稿材料及AI辅助创作规则未核实；投稿前应向平台确认。",
+    "点众文学网公开榜单未提供可验证的当日更新时刻，部分陈列作品可能较旧，不能判定本日真实长篇销量。",
+    "点众阅读榜单为关联阅读产品，当前畅销高位作品偏短篇；无法直接代表点众文学原创长篇市场。",
+    "榜单热度/潜力值口径、收入、真实转化及留存均未公开，无法评价商业保证。"
+  ]
+}
