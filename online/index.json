@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "system_version": "4.3-quality",
+  "initialized": true,
+  "book": {
+    "id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
+    "title": "未命名小说",
+    "platform": null,
+    "selected_topic_id": null
+  },
+  "source": {
+    "repository_url": "https://github.com/1464356758/XS5",
+    "branch": "main",
+    "generated_at": "2026-10-28T09:15:52+00:00",
+    "state_revision": 0,
+    "workflow_revision": 0,
+    "state_sha256": "88823bbc6c032b071bb867e3746dae68847f4d3433cfc949985ba98be66977ba",
+    "workflow_sha256": "ffb6ec059b2d1905df3d7fdaeadf5b83fa1d839ed1edb4292b36b08b30f5d819",
+    "manuscript_storage": "plain_files_v1",
+    "requires_reader_key": false
+  },
+  "progress": {
+    "target_chapters": 100,
+    "adopted_chapters": 0,
+    "target_han": 900000,
+    "actual_han": 0,
+    "completed": false,
+    "needs_revalidation": [],
+    "reviewed_until": 0,
+    "window_review_due": false,
+    "unresolved_reviews": [],
+    "serial_mode": true,
+    "frozen_chapters": 0,
+    "published_chapters": 0,
+    "publication_status": "只统计真实回执；无回执不等于未发布",
+    "open_incidents": 0,
+    "narrative_review_required": true,
+    "release_check_required": true
+  },
+  "task": {
+    "phase": "WAITING_PLATFORM",
+    "label": "等待选择平台",
+    "chapter": 1,
+    "detail": "系统已准备好，请先选择创作平台。",
+    "next_action": "在起点、番茄、七猫、晋江中选择一个平台，或指定其他平台。",
+    "updated_at": "2026-10-28T09:15:52+00:00"
+  },
+  "chapters": [],
+  "topics": [],
+  "research": null,
+  "history": [
+    {
+      "at": "2026-10-28T09:15:52+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    }
+  ]
+}
