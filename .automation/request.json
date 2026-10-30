@@ -1,13 +1,12 @@
 {
   "schema_version": 1,
-  "request_id": "xs5_20261030_begin_f5d866d5",
-  "base_sha": "e1bc01028f72bda7555d2b23db8545effea9862c",
+  "request_id": "xs5_revoke_20261030_bd6b695b_01",
+  "base_sha": "8887998dcb4ed9f5799bff0b28c9f9087596b353",
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
   "controller": {
-    "kind": "automation",
-    "automation_id": "6ae2148f6a40819181007cfa6c87f43e",
-    "session_id": "xs5_20261030_f5d866d5_35d4_832b_8889_2ab5edec686f",
-    "platform_run_id": "f5d866d5-35d4-832b-8889-2ab5edec686f"
+    "kind": "maintenance",
+    "session_id": "xs5_author_repair_20261030_bd6b695b"
   },
-  "phase": "begin"
+  "phase": "recover",
+  "recovery_grant": ".automation/recoveries/xs5_legacy_20261030_bd6b695b.json"
 }
