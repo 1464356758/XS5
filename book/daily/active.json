@@ -2,13 +2,31 @@
   "schema_version": 1,
   "type": "novel-daily-task-v1",
   "book_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d",
-  "run_id": "bd6b695bbcd6460d8611a85bf2d09bda",
+  "run_id": "46164824a3da4efdb954cd8d77cc9c1a",
   "work_id": "0ccf1f21-126e-4b70-a2c1-f823d5657e1d:2026-10-29:2",
   "start_date": "2026-10-29",
   "started_at": "2026-10-28T20:58:14+00:00",
   "chapter": 2,
-  "status": "running",
+  "status": "blocked",
   "baseline_count": 1,
   "baseline_fingerprint": "a098328e6e225de932a3daecdaf5593d972b2a23d172d9eee68b295cebdb0178",
-  "attempts": []
+  "attempts": [
+    {
+      "run_id": "bd6b695bbcd6460d8611a85bf2d09bda",
+      "status": "authorization_revoked",
+      "authorization_revoked_at": "2026-10-30T00:52:13+00:00",
+      "audit_path": "daily/recoveries/xs5_legacy_20261030_bd6b695b.json"
+    }
+  ],
+  "reason": "作者授权撤销旧执行；已准备接续同一目标，等待既有每日任务。",
+  "operator_recovery": {
+    "status": "ready",
+    "grant_path": ".automation/recoveries/xs5_legacy_20261030_bd6b695b.json",
+    "grant_sha256": "07aea2a083432a5d900af2584d74dab902b93a927b6d7836b8f075e142fe526c",
+    "audit_path": "daily/recoveries/xs5_legacy_20261030_bd6b695b.json",
+    "audit_sha256": "492c7dc5c6546f2a7fcb7abe3e9d05e13318013b0da70dc43ec50577abe51276",
+    "old_run_id": "bd6b695bbcd6460d8611a85bf2d09bda",
+    "ready_run_id": "46164824a3da4efdb954cd8d77cc9c1a",
+    "expected_state_sha256": "0a26326d372b308c9812d655650e14d27f7abf27550e7e0f9a1fafdba789b57e"
+  }
 }
