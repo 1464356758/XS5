@@ -1,0 +1,79 @@
+{
+  "platform": "migu",
+  "checked_at": "2026-10-31T14:52:17+00:00",
+  "coverage_status": "partial",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "咪咕文学网：官方作者服务入口、作家专区、投稿指南与官方推荐内容",
+      "url": "https://www.cmread.com/wenxuenew/",
+      "accessed_at": "2026-10-31T14:52:17+00:00"
+    },
+    {
+      "id": "S2",
+      "title": "咪咕数字传媒内容合作说明（机构合作，与个人作者投稿不同）",
+      "url": "https://www.cmread.com/wenxuenew/content_join",
+      "accessed_at": "2026-10-31T14:52:17+00:00"
+    }
+  ],
+  "rules": [
+    {
+      "topic": "个人作者投稿入口",
+      "status": "verified",
+      "source_id": "S1",
+      "conclusion": "官方网站列出作家专区、投稿指南、我要投稿入口；具体登录流程和个人投稿材料未完成页面验证。"
+    },
+    {
+      "topic": "原创与版权",
+      "status": "verified",
+      "source_id": "S2",
+      "conclusion": "机构内容合作明确强调授权链与版权证明；不等同个人作者签约细则。原创独立写作并保留底稿，不移植他书正文。"
+    },
+    {
+      "topic": "个人作者签约、更新、保底与福利",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "尚未从可读官方个人作者合同/福利条款确认条件、金额和是否有日更硬性门槛，不把机构条款或活动奖励套用。"
+    },
+    {
+      "topic": "AI辅助创作和自动生成内容",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "未获得明确适用于个人作者AI生成/辅助创作的现行官方细则。正式投稿前需确认标识、人工参与、版权归属及平台审核要求。"
+    },
+    {
+      "topic": "榜单类型与近期样本",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "官网公开编辑推荐及作品展示属于策展陈列，不是新书/畅销/阅读排行；无法核实近期独立榜单位次。"
+    }
+  ],
+  "rank_samples": [],
+  "editorial_examples": [
+    {
+      "title": "渣男逃婚，我当场改嫁了",
+      "author": "慕妘娍",
+      "evidence_type": "官网编辑推荐（非榜单）"
+    },
+    {
+      "title": "谢家的短命鬼长命百岁了",
+      "author": "怡然",
+      "evidence_type": "官网编辑推荐（非榜单）"
+    },
+    {
+      "title": "灵境：末日余烬",
+      "author": "钟云",
+      "evidence_type": "官网题材展示（非榜单）"
+    },
+    {
+      "title": "我的仿生人闺蜜",
+      "author": "木木笔",
+      "evidence_type": "官网题材展示（非榜单）"
+    }
+  ],
+  "gaps": [
+    "2026-10-31官方新书、畅销、阅读等即时榜单名次和可回查单书链接未核实；不宣称完成榜单扫榜。",
+    "个人作者签约、稿酬、更新要求与AI辅助政策原始可读条款未核实；投稿前再次检查。",
+    "官网展示的作品仅用于题材与包装观察，不证明当期最热或预期收益。"
+  ]
+}

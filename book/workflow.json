@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "revision": 3,
+  "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
+  "phase": "WAITING_TOPIC",
+  "platform": "migu",
+  "selected_topic": null,
+  "research_path": "research/platform_03855988b7762433a45e6db94a2b91d601b1156c8a32b0bd455ca641c1676a73.json",
+  "topics_path": "research/topics_a043f21d31fc614932b376cacdc280aac98980e923a6804b18032baaf656c8e9.json",
+  "chapter": 1,
+  "history": [
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择咪咕文学／咪咕阅读，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    }
+  ],
+  "detail": "已准备8个原创选题，等待作者选择。",
+  "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
+  "updated_at": "2026-10-31T14:58:05+00:00"
+}

@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "system_version": "4.3-quality",
+  "initialized": true,
+  "book": {
+    "id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
+    "title": "未命名小说",
+    "platform": "migu",
+    "selected_topic_id": null
+  },
+  "source": {
+    "repository_url": "https://github.com/1464356758/XS5",
+    "branch": "main",
+    "generated_at": "2026-10-31T14:58:05+00:00",
+    "state_revision": 0,
+    "workflow_revision": 3,
+    "state_sha256": "ea04967bff749d099e3f0778e3967c0365464ea9b0f98a84618b688a8a370a52",
+    "workflow_sha256": "781fdbd1476826de77fcfe267eec07a729eb316ad931de9842c4b789c8be63e5",
+    "manuscript_storage": "plain_files_v1",
+    "requires_reader_key": false
+  },
+  "progress": {
+    "target_chapters": 100,
+    "adopted_chapters": 0,
+    "target_han": 900000,
+    "actual_han": 0,
+    "completed": false,
+    "needs_revalidation": [],
+    "reviewed_until": 0,
+    "window_review_due": false,
+    "unresolved_reviews": [],
+    "serial_mode": true,
+    "frozen_chapters": 0,
+    "published_chapters": 0,
+    "publication_status": "只统计真实回执；无回执不等于未发布",
+    "open_incidents": 0,
+    "narrative_review_required": true,
+    "release_check_required": true
+  },
+  "task": {
+    "phase": "WAITING_TOPIC",
+    "label": "等待选择题材",
+    "chapter": 1,
+    "detail": "已准备8个原创选题，等待作者选择。",
+    "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
+    "updated_at": "2026-10-31T14:58:05+00:00"
+  },
+  "chapters": [],
+  "topics": [
+    {
+      "id": "T01",
+      "title": "《被退婚那年，我接下了全县的烂账》",
+      "genre": "古代女性成长／经营群像",
+      "pitch": "女账房替债入县衙，发现每笔坏账都牵着一个不敢说真话的人；必须在债主与百姓之间做选择。",
+      "reader_promise": "破案式清账、从被欺负到掌握议价权，女主每次胜利均有代价。",
+      "long_form_engine": "乡镇账→盐粮路→府城财税→灾年财政→朝堂制度，旧办法在新利益格局失效。",
+      "stage_variation": "第1卷保住账册和人身，第2卷修复地方信用，第3卷遭借账打压，第4卷公开自身旧错，第5卷建立透明新制。",
+      "ending_direction": "公开历史欠账，建立可被监督的账制；不靠赐婚解决矛盾。",
+      "risk": "经济细节需要考据，算账场面易重复；严控现代金融术语。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "《我在殡仪馆替失踪者收遗物》",
+      "genre": "现代悬疑／职业现实",
+      "pitch": "遗物整理师接到一批没有死者名字的物品，逐步发现失踪人口与十年前一场集体事故相关。",
+      "reader_promise": "每案有人得到实际答案，主角也因追查付出关系与职业风险。",
+      "long_form_engine": "单件遗物→失踪家庭→救援记录→跨城证据→真相与补偿；不依赖超能力。",
+      "stage_variation": "从物证寻人转向审视自己的过错，伙伴由协作变成利益对立，终局必须面对合法程序。",
+      "ending_direction": "还原事故责任与个体命运，不靠天降口供。",
+      "risk": "可能重复“新物件引新谜”；职业流程、执法权限必须可信。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "《末日停电后，我靠修电网养活一座城》",
+      "genre": "末世科幻／工程生存",
+      "pitch": "全国断电，外包电工发现一座小水电站还能发电，但每送出一度电都要决定谁先活。",
+      "reader_promise": "每段都有设施真实运行与生存选择，团队协作而非无敌外挂。",
+      "long_form_engine": "村落发电→县城配网→工业重启→区域争夺→新社会秩序，设备会损耗且资源不可逆。",
+      "stage_variation": "小范围抢修转为能源分配政治，最后反对将生存资格绑定权力。",
+      "ending_direction": "建立透明配电与维护网络，允许局部失败留下伤痕。",
+      "risk": "技术、电压安全需核实；修机循环和资源奇迹风险。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "《侯府不要的女儿，管起了边城粮仓》",
+      "genre": "古言权谋／女性成长",
+      "pitch": "被逐出侯府的嫡女接管边境荒仓，发现守城将士吃空饷，粮账牵出军需生死线。",
+      "reader_promise": "经营升级与感情并行，每卷可见一项实际民生成果。",
+      "long_form_engine": "废仓→屯田→贸易→军粮→边境和约，风雪与政治约束逐步升级。",
+      "stage_variation": "前期做实粮食，中期被迫选择粮与人，后期重建边境共治契约。",
+      "ending_direction": "守住边城而非重返侯府求认可。",
+      "risk": "粮产和运输需要数量验证；避免无脑反派和万能现代知识。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "《我给未来的自己接了一通报警电话》",
+      "genre": "都市时间悬疑／女性成长",
+      "pitch": "接警员接到来自七天后的报案，却发现每次救人都会改变未来报警者身份。",
+      "reader_promise": "可解的当下案件、不同选择造成的明确代价和更深的身份谜团。",
+      "long_form_engine": "电话规则→社区案件→信息交易→系统来源→拒绝操纵命运，规则严格递进。",
+      "stage_variation": "从相信未来到发现每份预告都带偏差；中点出现主角自己制造的案件。",
+      "ending_direction": "打破依赖预知的结构，回到现实证据与人的责任。",
+      "risk": "时间逻辑易崩；未来信息不得万能且须编制事件账。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T06",
+      "title": "《穿成冷宫老嬷嬷，我要把六局做成铁板》",
+      "genre": "古代宫廷群像／制度博弈",
+      "pitch": "退休女官死后回到入宫第一年，从最底层掌事出发保护小宫女，却发现最危险的是旧制度。",
+      "reader_promise": "女性互助、真实岗位晋升、每次改革带来的反扑。",
+      "long_form_engine": "一宫→六局→内库→外朝采买→宫制变革，离不开身份与资源限制。",
+      "stage_variation": "初期救人，中期组织利益分裂，后期女主必须放弃个人特权来换制度。",
+      "ending_direction": "建立可追责的女官与内务体系，不以独宠收束。",
+      "risk": "宫廷历史与官制需要考据；说教或改革一帆风顺风险。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T07",
+      "title": "《玄门弃徒开了一间失物招领铺》",
+      "genre": "都市奇幻／轻悬疑群像",
+      "pitch": "被逐出师门的修行者只能替人找失物，越找越发现“失去”能够改写人的记忆和债。",
+      "reader_promise": "单元委托有温度、有惊喜，长线谜团持续改变主角原则。",
+      "long_form_engine": "街巷失物→城市异变→门派旧债→规则源头→主动放弃能力，逐步加成本。",
+      "stage_variation": "前期善意寻回，中期善意伤人，后期选择不让人随意抹掉痛苦与责任。",
+      "ending_direction": "把失去的记忆归还原主，留下不可全补的缺口。",
+      "risk": "单元套路重复、能力越界、温情过度；需限定失物规则。",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "T08",
+      "title": "《九零年代，我替妈妈重开国营照相馆》",
+      "genre": "年代现实／女性创业／亲情",
+      "pitch": "失业女儿回老城照相馆帮母亲挽回经营，却在冲印底片里发现影响一代工人的老厂改制疑云。",
+      "reader_promise": "有年代手艺和亲情共振，经营冲突、寻找真相双线兑现。",
+      "long_form_engine": "照相馆→婚庆影楼→县城连锁→数字化转型→老厂故事和解，每次换技术换对手。",
+      "stage_variation": "前期救生计，中期家人选择分叉，后期正视上一代在改制中的责任。",
+      "ending_direction": "母女各自拥有选择，照相馆留下城市真实记忆。",
+      "risk": "年代细节和时间线需查证，怀旧滤镜掩盖真实冲突的风险。",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "research": {
+    "platform": "migu",
+    "checked_at": "2026-10-31T14:52:17+00:00",
+    "coverage_status": "partial",
+    "sources": [
+      {
+        "id": "S1",
+        "title": "咪咕文学网：官方作者服务入口、作家专区、投稿指南与官方推荐内容",
+        "url": "https://www.cmread.com/wenxuenew/",
+        "accessed_at": "2026-10-31T14:52:17+00:00"
+      },
+      {
+        "id": "S2",
+        "title": "咪咕数字传媒内容合作说明（机构合作，与个人作者投稿不同）",
+        "url": "https://www.cmread.com/wenxuenew/content_join",
+        "accessed_at": "2026-10-31T14:52:17+00:00"
+      }
+    ],
+    "rules": [
+      {
+        "topic": "个人作者投稿入口",
+        "status": "verified",
+        "source_id": "S1",
+        "conclusion": "官方网站列出作家专区、投稿指南、我要投稿入口；具体登录流程和个人投稿材料未完成页面验证。"
+      },
+      {
+        "topic": "原创与版权",
+        "status": "verified",
+        "source_id": "S2",
+        "conclusion": "机构内容合作明确强调授权链与版权证明；不等同个人作者签约细则。原创独立写作并保留底稿，不移植他书正文。"
+      },
+      {
+        "topic": "个人作者签约、更新、保底与福利",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "尚未从可读官方个人作者合同/福利条款确认条件、金额和是否有日更硬性门槛，不把机构条款或活动奖励套用。"
+      },
+      {
+        "topic": "AI辅助创作和自动生成内容",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "未获得明确适用于个人作者AI生成/辅助创作的现行官方细则。正式投稿前需确认标识、人工参与、版权归属及平台审核要求。"
+      },
+      {
+        "topic": "榜单类型与近期样本",
+        "status": "unknown",
+        "source_id": null,
+        "conclusion": "官网公开编辑推荐及作品展示属于策展陈列，不是新书/畅销/阅读排行；无法核实近期独立榜单位次。"
+      }
+    ],
+    "rank_samples": [],
+    "editorial_examples": [
+      {
+        "title": "渣男逃婚，我当场改嫁了",
+        "author": "慕妘娍",
+        "evidence_type": "官网编辑推荐（非榜单）"
+      },
+      {
+        "title": "谢家的短命鬼长命百岁了",
+        "author": "怡然",
+        "evidence_type": "官网编辑推荐（非榜单）"
+      },
+      {
+        "title": "灵境：末日余烬",
+        "author": "钟云",
+        "evidence_type": "官网题材展示（非榜单）"
+      },
+      {
+        "title": "我的仿生人闺蜜",
+        "author": "木木笔",
+        "evidence_type": "官网题材展示（非榜单）"
+      }
+    ],
+    "gaps": [
+      "2026-10-31官方新书、畅销、阅读等即时榜单名次和可回查单书链接未核实；不宣称完成榜单扫榜。",
+      "个人作者签约、稿酬、更新要求与AI辅助政策原始可读条款未核实；投稿前再次检查。",
+      "官网展示的作品仅用于题材与包装观察，不证明当期最热或预期收益。"
+    ]
+  },
+  "history": [
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择咪咕文学／咪咕阅读，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-31T14:58:05+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    }
+  ]
+}
