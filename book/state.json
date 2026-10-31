@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
-  "title": "未命名小说",
-  "revision": 0,
+  "title": "《大旱那年，官府不许我们记雨》",
+  "revision": 3,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -24,8 +24,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9.md",
+      "sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+      "reason": "T14开书设定与人物知情资源基线"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_53965e53b389cc2f44ffb86a2a1d2065ca6c503af8b596327947a240dd470018.md",
+      "sha256": "53965e53b389cc2f44ffb86a2a1d2065ca6c503af8b596327947a240dd470018",
+      "reason": "T14完整100章十阶段路线与前五章场景计划"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9.md",
+      "sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+      "reason": "T14开书设定与人物知情资源基线"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_53965e53b389cc2f44ffb86a2a1d2065ca6c503af8b596327947a240dd470018.md",
+      "sha256": "53965e53b389cc2f44ffb86a2a1d2065ca6c503af8b596327947a240dd470018",
+      "reason": "T14完整100章十阶段路线与前五章场景计划"
+    }
+  ],
   "tasks": {},
   "completion": null,
   "serialization": {
