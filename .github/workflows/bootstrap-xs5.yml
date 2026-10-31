@@ -95,6 +95,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
+          git reset -q HEAD -- .github/workflows/novel-executor.yml .github/workflows/validate.yml
           git commit -m 'init: bootstrap independent XS5 and save Migu topic research'
           git fetch --quiet origin main
           test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
