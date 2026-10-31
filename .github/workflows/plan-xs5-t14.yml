@@ -1,0 +1,101 @@
+name: XS5 T14 official selection and 100 chapter plan
+on:
+  push:
+    paths:
+      - '.github/workflows/plan-xs5-t14.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  plan:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Ensure unchanged author choice and book identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, re
+          from pathlib import Path
+          s=json.loads(Path('book/state.json').read_text())
+          w=json.loads(Path('book/workflow.json').read_text())
+          assert s['book_id']==w['book_id']=='2b285e23-d842-4102-9f56-c55a1d6357b0'
+          assert w['phase']=='WAITING_TOPIC' and w['platform']=='migu'
+          assert w['selected_topic'] is None and not s['chapters'] and not s['inputs'] and not s['tasks']
+          assert w['revision']==4
+          c=json.loads(Path(w['topics_path']).read_text())['candidates']
+          assert any(t['id']=='T14' and t['title']=='《大旱那年，官府不许我们记雨》' for t in c)
+          a=Path('drafts/T14_100章路线_v1.md').read_text()
+          ns=[int(x) for x in re.findall(r'^- CH(\d{3})《',a,flags=re.MULTILINE)]
+          assert ns==list(range(1,101)),(len(ns),ns[:10],ns[-10:])
+          for n in range(1,11):
+              assert f'S{n:02d}｜' in a
+          p=Path('drafts/T14_作者设定_v1.md').read_text()
+          assert '待写' in p and 'P01' in p and 'GRAIN-CIV' not in p
+          print('PRECHECK PASS: topic T14, 100 unique chapter IDs, 10 arcs, 0 adopted chapters')
+          PY
+      - name: Select T14 and register canon/roadmap by authoritative tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/online_state.py select-topic --id T14 --request '作者明确回复：T14《大旱那年，官府不许我们记雨》；未授权开始写正文'
+          REV="$(python3 -c 'import json;print(json.load(open("book/state.json"))["revision"])')"
+          python3 tools/novel_state.py --root book set-input --kind canon --file drafts/T14_作者设定_v1.md --reason 'T14开书设定与人物知情资源基线' --base-revision "$REV"
+          REV="$(python3 -c 'import json;print(json.load(open("book/state.json"))["revision"])')"
+          python3 tools/novel_state.py --root book set-input --kind roadmap --file drafts/T14_100章路线_v1.md --reason 'T14完整100章十阶段路线与前五章场景计划' --base-revision "$REV"
+          python3 tools/online_state.py task --phase PLANNING --chapter 1 --detail 'T14已正式选定；作者设定、人物知情与资源基线、完整100章十阶段路线及前5章细案已保存并核验；正文0章。' --next '等待作者明确开始写，才执行第一章的brief-request、完整正文、叙事与八项审核、release-check、冻结及远端回读。'
+          python3 tools/online_state.py build-index
+          python3 tools/online_state.py validate-index
+          python3 tools/novel_state.py --root book status
+      - name: Check planned scope, immutable fingerprints, and engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m compileall -q tools
+          python3 -m unittest discover -s tests -p 'test_online_state.py' -q
+          python3 -m unittest discover -s tests -p 'test_novel_state.py' -q
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, hashlib, re
+          state=json.loads(Path('book/state.json').read_text())
+          wf=json.loads(Path('book/workflow.json').read_text())
+          idx=json.loads(Path('online/index.json').read_text())
+          assert state['revision']==3 and wf['phase']=='PLANNING'
+          assert state['book_id']==wf['book_id']==idx['book']['id']=='2b285e23-d842-4102-9f56-c55a1d6357b0'
+          assert state['title']=='《大旱那年，官府不许我们记雨》'
+          assert wf['selected_topic']['id']=='T14'
+          assert not state['chapters'] and not state['tasks'] and not state['serialization']['frozen']
+          assert idx['progress']['adopted_chapters']==0 and idx['task']['phase']=='PLANNING'
+          assert set(state['inputs'])=={'canon','roadmap'} and state['config']['serial_mode'] and state['config']['narrative_review_required']
+          for k in ('canon','roadmap'):
+              item=state['inputs'][k]; p=Path('book')/item['path']
+              assert p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()==item['sha256']
+          roadmap=(Path('book')/state['inputs']['roadmap']['path']).read_text()
+          ns=[int(x) for x in re.findall(r'^- CH(\d{3})《',roadmap,flags=re.MULTILINE)]
+          assert ns==list(range(1,101))
+          task=json.loads(Path('.automation/config.json').read_text())
+          assert task['book_id']==state['book_id'] and task['automation_id'] is None
+          print('VERIFIED plan: 100 chapters, canon and roadmap SHA256 bound, zero adopted, no automation')
+          PY
+      - name: Commit bound planning artifacts and compare remote head
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add book/state.json book/workflow.json book/inputs online/index.json
+          git diff --cached --quiet && { echo 'Expected plan changes absent'; exit 1; }
+          git commit -m 'plan(xs5): select T14 and register canon and 100 chapter roadmap'
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/main
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD)"
+          for f in book/state.json book/workflow.json online/index.json; do diff -q "$f" <(git show "FETCH_HEAD:$f"); done
+          python3 tools/online_state.py validate-index
+          echo "XS5_T14_REMOTE_READBACK_PASS $(git rev-parse HEAD)"
