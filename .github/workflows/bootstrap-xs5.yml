@@ -1,0 +1,108 @@
+name: Bootstrap XS5 from verified ZIP (one shot)
+on:
+  push:
+    paths:
+      - '.github/workflows/bootstrap-xs5.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bootstrap:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Guard clean workspace and acquire exact uploaded ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git ls-tree -r --name-only HEAD)" = '.github/workflows/bootstrap-xs5.yml'
+          curl --retry 3 -fLSs 'https://raw.githubusercontent.com/1464356758/xiaishuo-ZUOZONG/a7874223300e0fcf467b06f76dbe0b58a566a504/%E5%88%9D%E5%A7%8B%E5%8C%96%E7%B3%BB%E7%BB%9F%E5%8C%85.zip' -o /tmp/xs5-init.zip
+          echo 'e443e510f6da8367688bccb1c5d133210b60ac19c788e4877165a61084c70f86  /tmp/xs5-init.zip' | sha256sum -c -
+          python3 - <<'PY'
+          from zipfile import ZipFile
+          from pathlib import Path
+          import hashlib, json
+          with ZipFile('/tmp/xs5-init.zip') as z:
+              assert z.testzip() is None
+              names=z.namelist()
+              assert len(names)==97 and 'INIT_MANIFEST.json' in names
+              assert all(not Path(x).is_absolute() and '..' not in Path(x).parts for x in names)
+              z.extractall('.')
+          m=json.loads(Path('INIT_MANIFEST.json').read_text(encoding='utf-8'))
+          assert len(m['files'])==96 and set(names)==set(m['files'])|{'INIT_MANIFEST.json'}
+          for name,sha in m['files'].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==sha,name
+          print('EXACT_ZIP_MANIFEST_OK',len(names))
+          PY
+      - name: Bootstrap unique identity and select Migu
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/online_state.py bootstrap --repo https://github.com/1464356758/XS5 --branch main
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('platforms.json')
+          v=json.loads(p.read_text(encoding='utf-8'))
+          assert not any(x['id']=='migu' for x in v['platforms'])
+          v['platforms'].append({'id':'migu','name':'咪咕文学／咪咕阅读','official_domains':['cmread.com','migu.cn','migu.com'],'writer_url':'https://www.cmread.com/wenxuenew/','ranking_url':'https://www.cmread.com/wenxuenew/'})
+          p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          state=json.loads(Path('book/state.json').read_text())
+          config=Path('.automation/config.json')
+          v=json.loads(config.read_text());assert v['book_id'] is None and v['automation_id'] is None
+          v['book_id']=state['book_id']
+          config.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
+          PY
+          python3 tools/online_state.py select-platform --platform migu
+      - name: Save verified-source partial research and eight original candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, zlib, json
+          payload='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'
+          data=json.loads(zlib.decompress(base64.b64decode(payload)))
+          Path('/tmp/xs5-migu-research.json').write_text(data['research'],encoding='utf-8')
+          Path('/tmp/xs5-migu-topics.json').write_text(data['topics'],encoding='utf-8')
+          assert len(json.loads(data['topics'])['candidates'])==8
+          PY
+          python3 tools/online_state.py research --file /tmp/xs5-migu-research.json
+          python3 tools/online_state.py topics --file /tmp/xs5-migu-topics.json
+          python3 tools/online_state.py validate-index
+          python3 - <<'PY'
+          import json
+          s=json.load(open('book/state.json'));w=json.load(open('book/workflow.json'));a=json.load(open('.automation/config.json'))
+          assert w['platform']=='migu' and w['phase']=='WAITING_TOPIC'
+          assert not s['chapters'] and a['book_id']==s['book_id'] and a['automation_id'] is None
+          assert s['config']['serial_mode'] and s['config']['narrative_review_required']
+          print('BOOK_ID',s['book_id'],'PHASE',w['phase'],'NO_CHAPTERS',True)
+          PY
+      - name: Basic executable verification
+        run: |
+          set -euo pipefail
+          python3 -m compileall -q tools
+          python3 -m unittest discover -s tests -p 'test_online_state.py' -q
+          python3 tools/online_state.py validate-index
+      - name: Nonforce fast-forward commit and remote readback
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'init: bootstrap independent XS5 and save Migu topic research'
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/main
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD)"
+          for f in AGENTS.md tools/online_state.py book/state.json book/workflow.json online/index.json .automation/config.json; do
+            diff -q "$f" <(git show "FETCH_HEAD:$f")
+          done
+          python3 tools/online_state.py validate-index
+          echo "DEPLOYMENT_REMOTE_READBACK_PASS $(git rev-parse HEAD)"
