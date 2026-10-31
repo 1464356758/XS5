@@ -1,0 +1,52 @@
+name: XS5 second-topic-slate save and validate
+on:
+  push:
+    paths:
+      - '.github/workflows/refresh-xs5-topics.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Check book identity and pending-topic gate
+        run: |
+          python3 - <<'PY'
+          import json
+          s=json.load(open('book/state.json'))
+          w=json.load(open('book/workflow.json'))
+          assert s['book_id']=='2b285e23-d842-4102-9f56-c55a1d6357b0'
+          assert w['book_id']==s['book_id'] and w['platform']=='migu'
+          assert w['phase']=='WAITING_TOPIC' and w['selected_topic'] is None
+          assert not s['chapters'] and w['topics_path']
+          PY
+      - name: Update immutable topic research and indexed workflow using official tool
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/online_state.py topics --file 'research/drafts/低同质化第二批候选_20261031.json'
+          python3 tools/online_state.py validate-index
+          python3 -m unittest discover -s tests -p 'test_online_state.py' -q
+      - name: Atomically commit and verify nonforce remote
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add book/workflow.json online/index.json research/topics_*.json
+          git diff --cached --quiet && { echo 'No changes to commit'; exit 1; }
+          git commit -m 'research(xs5): index second originality-focused topic slate'
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/main
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD)"
+          for f in book/workflow.json online/index.json; do diff -q "$f" <(git show "FETCH_HEAD:$f"); done
+          python3 tools/online_state.py validate-index
+          echo "SECOND_TOPIC_SLATE_REMOTE_READBACK_PASS $(git rev-parse HEAD)"
