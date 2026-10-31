@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": 3,
+  "revision": 4,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "phase": "WAITING_TOPIC",
   "platform": "migu",
   "selected_topic": null,
   "research_path": "research/platform_03855988b7762433a45e6db94a2b91d601b1156c8a32b0bd455ca641c1676a73.json",
-  "topics_path": "research/topics_a043f21d31fc614932b376cacdc280aac98980e923a6804b18032baaf656c8e9.json",
+  "topics_path": "research/topics_f53f0ba129f4962c31c24d34943daf6b4b7a9ba05f7245b8d15ca8e8493a610e.json",
   "chapter": 1,
   "history": [
     {
@@ -32,9 +32,15 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-31T15:13:51+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
     }
   ],
   "detail": "已准备8个原创选题，等待作者选择。",
   "next_action": "作者选择候选编号后，进行长篇规划；当前不写正文。",
-  "updated_at": "2026-10-31T14:58:05+00:00"
+  "updated_at": "2026-10-31T15:13:51+00:00"
 }
