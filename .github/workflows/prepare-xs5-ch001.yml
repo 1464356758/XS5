@@ -94,7 +94,8 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_online_state.py' -q
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add book/state.json book/workflow.json book/briefs book/candidates online/index.json drafts/CH001_任务书.json drafts/CH001_writer_context.txt drafts/CH001_未审全文.txt
+          git add book/state.json book/workflow.json book/briefs book/candidates online/index.json
+          git add -f drafts/CH001_任务书.json drafts/CH001_writer_context.txt drafts/CH001_未审全文.txt
           git diff --cached --quiet && { echo 'No pending candidate changes'; exit 1; }
           git commit -m 'draft(xs5): register full CH001 candidate after word-count and brief checks'
           git fetch --quiet origin main
