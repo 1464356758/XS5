@@ -1,0 +1,217 @@
+{
+  "chapter": 2,
+  "title": "九分不是一县的雨",
+  "stage": "S01",
+  "base_revision": 4,
+  "canon_sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+  "text_sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+  "complete": true,
+  "story_time_end": 2290,
+  "summary": "六月初八清晨，程桑赴城东站调查前日零雨，撞见郭嫂因县报与停水传言把井水倒入雨筒，今晨观测报废。她核站所原簿与裴笃、阿芜及顾三嫂的有限见证，维护城东昨日卯末测零而拒县署‘全县无雨’同认。东街井房水车迟发源于西门塌井而非北岗落雨谣言；程桑与脚夫救东栅桥倾车，四缸实损半缸。午后北岗验站，县署栾直初比旧尺九分主刻无明显错位，自留水样和旧尺伤痕仍待正式复核，北岗原簿暂未移交，县署零雨合报也未撤。夜间宋榆告知祖父四十九号仍无粮，程桑将下一步目标转向合法急发副票。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "她把原簿收好，决定天亮先往城东观雨站核数，再赶回北岗等候验站的人。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "宋榆的祖父低头数自己的号牌。那是四十九。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "县署尚未核定降水来源及全县影响。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+      }
+    ],
+    "conclusion": "已回读CH001正式全文、CH002完整候选、实际reader资料及事实路线。程桑在CH002尊重与自己九分不同的城东零，今晨倒水作废且不改历史；水车迟发查明与塌井应急有关，桥上半缸实损；北岗只初验不臆称州府准许，四十九号仍待粮。两章行动办法不同：CH001争县署待核收文并完成卢家一份急补，CH002保独立零测、实救水车并接受测尺/水样证据限制。仍有官署争议密度偏高的编辑建议，CH003必须转为粮食实盘与民生兑现；同上下文读者仅same_context_approximation。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "rain:east:measured-june7",
+      "value": "城东站六月初七卯末原测无可计水线，裴笃和阿芜两名站内观察者只认本站该时段，不能保证全县无雨。",
+      "holder": "",
+      "valid_from": 1490,
+      "valid_until": null,
+      "quote": "阿芜接过自己的笔，写了一张极短的见证：六月初七卯末，于城东站见铜筒未显可计水线。"
+    },
+    {
+      "kind": "fact",
+      "key": "rain:east:june8-wellwater",
+      "value": "六月初八城东站被郭嫂人为倒入井水，当日该次观测作废，不可追写为零。",
+      "holder": "",
+      "valid_from": 1390,
+      "valid_until": null,
+      "quote": "把倒水的时辰记下来。谁看见了，谁说。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "Gu:suncloth:start-time",
+      "value": "顾三嫂指出白麻布巳初才挂出，不可倒推证明卯末天空无雨。",
+      "holder": "顾三嫂",
+      "valid_from": 1510,
+      "valid_until": null,
+      "quote": "我巳初才挂出去，卯末哪来的布？"
+    },
+    {
+      "kind": "knowledge",
+      "key": "Awu:scoped-testimony",
+      "value": "阿芜同意仅签自己在城东看到的读数，拒担保全县。",
+      "holder": "阿芜",
+      "valid_from": 1590,
+      "valid_until": null,
+      "quote": "我就认这个。"
+    },
+    {
+      "kind": "fact",
+      "key": "county:signature-request",
+      "value": "县署小吏送来以‘临河无雨’为题头的城东同认纸，未得到阿芜全县担保。",
+      "holder": "",
+      "valid_from": 1650,
+      "valid_until": null,
+      "quote": "那纸的题头写着：承平十七年六月初七，临河无雨，城东观测官同认。"
+    },
+    {
+      "kind": "state",
+      "key": "east:watercart:route-document",
+      "value": "东街井房出示西门旧井塌损急调水车的木牌，车夫称‘北岗落雨’只是传言并非该牌所载理由。",
+      "holder": "",
+      "valid_from": 1710,
+      "valid_until": null,
+      "quote": "西门塌井，急换水源。"
+    },
+    {
+      "kind": "fact",
+      "key": "east:bridge:water-loss",
+      "value": "东栅桥陷车时原有四缸水，一缸破损洒出半缸，另三缸封口完好；不得复原实际半缸损失。",
+      "holder": "",
+      "valid_from": 1770,
+      "valid_until": null,
+      "quote": "破掉的那只只剩半缸，另外三缸封口尚好。"
+    },
+    {
+      "kind": "state",
+      "key": "east:water:distribution-pending",
+      "value": "郭嫂提出先送两缸东巷，但掌车人未立刻改配，必须由东巷轮水人认领，不能记为已经全部到户。",
+      "holder": "",
+      "valid_from": 1790,
+      "valid_until": null,
+      "quote": "汉子没有随她说一声就改配额，而是叫负责东巷的轮水人来认领。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P01:rumor-not-fact",
+      "value": "程桑亲自核调车木牌，知道不能仅凭郭嫂转述就认定县署以报雨扣城东饮水。",
+      "holder": "程桑",
+      "valid_from": 1740,
+      "valid_until": null,
+      "quote": "自己若只凭郭嫂子的转述便认定县署借雨扣水，写进纸里，和县署把北岗九分写成全县零并无两样。"
+    },
+    {
+      "kind": "state",
+      "key": "farmer:witness:declined",
+      "value": "昨日石桥附近赶驴农人仅听檐响，担心证词影响救粮而暂不同意赴县署作证。",
+      "holder": "",
+      "valid_from": 1910,
+      "valid_until": null,
+      "quote": "那我先不去。"
+    },
+    {
+      "kind": "fact",
+      "key": "north:ruler:precheck",
+      "value": "栾直以县制尺初比北岗旧尺，九分主刻未见明显错位，旧划痕和正式复校仍待处理。",
+      "holder": "",
+      "valid_from": 2050,
+      "valid_until": null,
+      "quote": "确认从零至九分的主刻间距没有明显错位。"
+    },
+    {
+      "kind": "state",
+      "key": "north:sample:self-sealed",
+      "value": "程桑陶盏封样没有独立见证水从筒中倒入，栾直仅允许记录为个人待查样。",
+      "holder": "",
+      "valid_from": 2090,
+      "valid_until": null,
+      "quote": "他不允许把陶盏写成独立证明，只能写成“雨记自留待查样”。"
+    },
+    {
+      "kind": "state",
+      "key": "north:raw-ledger:holder",
+      "value": "栾直只夹现场初验签、不收走北岗原簿，程桑仍负责保管。",
+      "holder": "",
+      "valid_from": 2110,
+      "valid_until": null,
+      "quote": "原簿没有被他收走，只在六月初七那页夹进一张写着“已现场初验”的小签。"
+    },
+    {
+      "kind": "state",
+      "key": "county:report:still-not-withdrawn",
+      "value": "栾直核验草单站别并列北岗九与城东零，但未宣布州府核准九分，也未撤回县署零雨合报。",
+      "holder": "",
+      "valid_from": 2190,
+      "valid_until": null,
+      "quote": "他没有宣布北岗九分已经获州府认可，也没有把县署的零雨合报当场撤销。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P08:grandfather:jun8-ration",
+      "value": "宋榆转述祖父六月初八再次排四十九号仍未获普通号粮，程桑尚未实盘县仓。",
+      "holder": "宋榆",
+      "valid_from": 2220,
+      "valid_until": null,
+      "quote": "他等到日头偏西，还是没叫到。"
+    },
+    {
+      "kind": "state",
+      "key": "P01:next-urgent-grain",
+      "value": "程桑计划接下来向岑野核合法急发副票的缺签与可发仓粮，尚未获得实物或批票。",
+      "holder": "",
+      "valid_from": 2260,
+      "valid_until": null,
+      "quote": "明日我得去问岑野，急发副票究竟少哪一个人的签。"
+    }
+  ],
+  "progression": {
+    "goal": "兑现CH001对城东零独立核验和北岗现场验站的当章承诺，阻止局部数据被官府或民众挪作全县真相。",
+    "obstacle": "城东当日读数被井水混入、站所见证人遭逼签全县零、水车去向传言难核、北岗原测缺全程独立见证与正式校尺。",
+    "method": "去城东验原簿、砸实 witness 限定时辰，核井房木牌、现场参与水车脱险，步行石桥回北岗接受县制尺和存水来源初验。",
+    "choice": "主角主动保护对自身立场不利的真实城东零，拒绝超范围保证县无雨；当面承认陶盏样本非独立证明，不拦合法县署初查；去桥上救水而牺牲时间。",
+    "result": "城东六月初七卯末零取得本所记录与阿芜同见证词，六月初八混水废测；桥上实保三缸半水；北岗旧尺九分主刻初比无明显偏差，县署仅做分站草单。",
+    "consequence": "阿芜裴笃有俸粮受罚风险，郭嫂与井房真实损失半缸、领水仍待实际认领，程桑手受绳伤、返站延迟；县报仍在州路，四十九号仍无粮。",
+    "next_options": "CH003应面向岑野与赈棚，实查合法急发副票、可用粮和具体弱户；CH004旧尺正式校准与交接；CH010北岗原簿正式存证。",
+    "scene_function": "人为倒水的动作钩→阿芜与母亲拒全县保证→塌井调水与桥上实损→石桥农人证言边界→北岗现场初验→四十九号仍饿的民生反问。"
+  },
+  "thread_events": [
+    {
+      "id": "P-EAST-VERIFY",
+      "action": "close",
+      "description": "已亲赴城东复查原簿、站点与阿芜亲眼复尺，确认六月初七卯末无可计水线；限定一处一时，不扩称全县全天。",
+      "quote": "阿芜接过自己的笔，写了一张极短的见证：六月初七卯末，于城东站见铜筒未显可计水线。"
+    },
+    {
+      "id": "P-RAIN-RAW",
+      "action": "partial",
+      "description": "北岗旧尺经县尺初比九分主刻未见明显错位，但自留水样独立性和正式复校、原簿封存仍未完成，保持CH010到期。",
+      "quote": "确认从零至九分的主刻间距没有明显错位。"
+    },
+    {
+      "id": "P-GRAIN-WINDOW",
+      "action": "develop",
+      "description": "城内四十九号老人次日仍未领普通粮，批量急发尚未办理，CH020期限不变。",
+      "quote": "他等到日头偏西，还是没叫到。"
+    }
+  ],
+  "stage_closing": false,
+  "measured_han": 9547
+}
