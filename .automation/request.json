@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "request_id": "xs5preflight20261101cfg01",
-  "base_sha": "b5292da6311f5a2de984f281b2e9bdc8326cbf17",
+  "request_id": "xs5ch002pf20261101a9c31",
+  "base_sha": "e3856319311beaac76af57202f7dce0e6ceef16b",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
     "automation_id": "6ae6ea4329b88191b59e266142284c16",
-    "session_id": "xs5config20261101pf01",
+    "session_id": "xs5ch002manual20261101a9c31",
     "platform_run_id": null
   },
   "phase": "preflight"
