@@ -1,0 +1,160 @@
+{
+  "chapter": 1,
+  "title": "印比雨先到",
+  "stage": "S01",
+  "base_revision": 3,
+  "canon_sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+  "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+  "complete": true,
+  "story_time_end": 780,
+  "summary": "六月初七，程桑在北岗测出九分雨，见县署已预印全县零雨合报。她要求宋榆只见证复尺，入城后目睹四十九号未领粮，协助卢家病弱家庭用医证、保人及仓簿核验领到一份急补。她与贺渊谈判后取得北岗九分待核收文、保留原簿，但县署零雨合报仍已发往州府。母亲托人捎来南洼干芦叶，程桑决定次晨去城东核零，随后迎北岗验站。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [],
+    "conclusion": "通读第一章和远端正文，北岗实测、宋榆局限、县仓账面与实存、卢家急补以及县署有限收文均有原文，县报未改、祖父未领、失俸风险和城东待验均没有假装解决。首章尚无旧章可比。；same_context_approximation：非独立读者测试。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "rain:beigang:CH001",
+      "value": "北岗观雨原簿记下当地九分，非全县实测结论",
+      "holder": "",
+      "valid_from": 80,
+      "valid_until": null,
+      "quote": "北岗落了雨，我就不能替北岗写零。"
+    },
+    {
+      "kind": "fact",
+      "key": "county:zero_report:preprinted",
+      "value": "县署预制并已盖印全县无雨合报",
+      "holder": "",
+      "valid_from": 90,
+      "valid_until": null,
+      "quote": "承平十七年六月初七，本县无雨。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P08:songyu:limited-witness",
+      "value": "宋榆只目击筒中水及复尺，不能担保落雨全过程",
+      "holder": "宋榆",
+      "valid_from": 120,
+      "valid_until": null,
+      "quote": "我只看见筒里有水，看见你拿尺量。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P01:local-versus-county",
+      "value": "程桑明确九分只是北岗站数据，城东南洼必须独立核",
+      "holder": "程桑",
+      "valid_from": 160,
+      "valid_until": null,
+      "quote": "你说的是尺上九分，不是临河县九分。"
+    },
+    {
+      "kind": "fact",
+      "key": "relief:queue:49",
+      "value": "宋榆祖父是赈棚四十九号，普通号粮当日尚未领",
+      "holder": "",
+      "valid_from": 335,
+      "valid_until": null,
+      "quote": "宋榆的祖父低头数自己的号牌。那是四十九。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P04:grain:ledger510",
+      "value": "岑野称赈仓账面五百一十石，尚不能等同当日可发实粮",
+      "holder": "岑野",
+      "valid_from": 405,
+      "valid_until": null,
+      "quote": "县赈仓册上五百一十石。但那是账数，不能当今日现米。"
+    },
+    {
+      "kind": "fact",
+      "key": "relief:Lu:sick-supplement",
+      "value": "卢家妇人凭医证、保人及仓簿核验收到一份病弱急补粮",
+      "holder": "",
+      "valid_from": 515,
+      "valid_until": null,
+      "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P02:beigang:pending",
+      "value": "贺渊得知北岗九分异议但仅允许登记待核",
+      "holder": "贺渊",
+      "valid_from": 625,
+      "valid_until": null,
+      "quote": "北岗，九分，待核。"
+    },
+    {
+      "kind": "state",
+      "key": "evidence:receipt:limited",
+      "value": "县署收文承认存在原测与复尺见证，降水成因和全县影响未核定",
+      "holder": "",
+      "valid_from": 660,
+      "valid_until": null,
+      "quote": "县署尚未核定降水来源及全县影响。"
+    },
+    {
+      "kind": "fact",
+      "key": "county:zero_report:dispatched",
+      "value": "零雨合报当日下午由县署交至驿房，州府尚未更正",
+      "holder": "",
+      "valid_from": 710,
+      "valid_until": null,
+      "quote": "日光向西斜时，县署门内又有人把本县无雨的总报交给驿房。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "P01:south:message",
+      "value": "程桑获织妇转述母亲担忧南洼无雨，尚未持独立田情证明",
+      "holder": "程桑",
+      "valid_from": 745,
+      "valid_until": null,
+      "quote": "你娘原话是，别让他们把山上的雨算到我们田里。"
+    },
+    {
+      "kind": "state",
+      "key": "P01:next:mission",
+      "value": "程桑计划次晨先核城东零雨，再回北岗等验站；计划尚未执行",
+      "holder": "",
+      "valid_from": 770,
+      "valid_until": null,
+      "quote": "她把原簿收好，决定天亮先往城东观雨站核数，再赶回北岗等候验站的人。"
+    }
+  ],
+  "progression": {
+    "goal": "让北岗九分有可核证的正式记录，同时不让一个站点的雨剥夺无雨村粮食。",
+    "obstacle": "县署预先盖零雨合报，州府三日复核可能缓粮；雨记无署印与粮权、原测尚欠独立全程目击。",
+    "method": "原簿留痕与有限见证、桥上界定雨区；赈棚核病弱急补，入县署争带时辰和证明力界限的收文。",
+    "choice": "不签零雨，也不凭九分强改县合报；不拦驿马，保留县署已收到异议的时辰与接收链。",
+    "result": "卢家得到一份真实病弱急补，县署登记北岗九分待核，原簿由程桑保留，零雨合报仍出城。",
+    "consequence": "程桑面临擅离与失俸风险，宋榆与岑野留有限见证，宋榆祖父仍等粮；新方向是城东零雨核验。",
+    "next_options": "CH002赴城东复核、赶回北岗迎验站；CH003再争发粮缺口，CH004核尺筒证据交接。",
+    "scene_function": "观雨棚提出无法轻易解决的数值冲突；路与赈棚显示具体人；药铺和仓簿完成小额兑现；县署形成有限证据，母亲来信让主角修正立场。"
+  },
+  "thread_events": [
+    {
+      "id": "P-RAIN-RAW",
+      "action": "plant",
+      "description": "北岗原测九分被县署登记待核，仍需正式复核和保全原簿",
+      "quote": "县署尚未核定降水来源及全县影响。"
+    },
+    {
+      "id": "P-GRAIN-WINDOW",
+      "action": "plant",
+      "description": "五分以上复核可导致三日缓粮，虽卢家急补实际发出但批量救粮仍待落实",
+      "quote": "那三日落在纸上，只是一道勾。"
+    },
+    {
+      "id": "P-EAST-VERIFY",
+      "action": "plant",
+      "description": "第二站城东的零雨必须独立核验",
+      "quote": "这一次，零也必须是真的。"
+    }
+  ],
+  "stage_closing": false,
+  "measured_han": 9594
+}

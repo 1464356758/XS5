@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 8,
+  "revision": 9,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
-  "phase": "REVIEWING",
+  "phase": "WAITING_NEXT",
   "platform": "migu",
   "selected_topic": {
     "id": "T14",
@@ -24,7 +24,7 @@
   },
   "research_path": "research/platform_03855988b7762433a45e6db94a2b91d601b1156c8a32b0bd455ca641c1676a73.json",
   "topics_path": "research/topics_f53f0ba129f4962c31c24d34943daf6b4b7a9ba05f7245b8d15ca8e8493a610e.json",
-  "chapter": 1,
+  "chapter": 2,
   "history": [
     {
       "at": "2026-10-31T14:58:05+00:00",
@@ -79,9 +79,15 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "CH001《印比雨先到》完整草稿实测字数达标，已登记唯一候选；正在逐项做正文证据、因果及叙事审核，尚未采用。"
+    },
+    {
+      "at": "2026-11-01T05:57:23+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "CH001《印比雨先到》已完成V4.3正文与叙事证据审核，release-check通过，采用冻结；未登记咪咕平台发布。"
     }
   ],
-  "detail": "CH001《印比雨先到》完整草稿实测字数达标，已登记唯一候选；正在逐项做正文证据、因果及叙事审核，尚未采用。",
-  "next_action": "复核关键时序、粮权、知情与局部救粮兑现；release-check通过才冻结。",
-  "updated_at": "2026-11-01T05:51:25+00:00"
+  "detail": "CH001《印比雨先到》已完成V4.3正文与叙事证据审核，release-check通过，采用冻结；未登记咪咕平台发布。",
+  "next_action": "作者再次授权时只执行CH002；先读取CH001全部冻结正文与事实账，城东零雨现场核对，禁止修改CH001。",
+  "updated_at": "2026-11-01T05:57:23+00:00"
 }

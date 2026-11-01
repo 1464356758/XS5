@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "title": "《大旱那年，官府不许我们记雨》",
-  "revision": 3,
+  "revision": 4,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -21,7 +21,18 @@
     "opening_impact_max_han": 3000,
     "narrative_review_required": true
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "印比雨先到",
+      "stage": "S01",
+      "text_path": "chapters/CH001_2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6.txt",
+      "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+      "record_path": "records/CH001_be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86.json",
+      "record_sha256": "be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86",
+      "han_count": 9594,
+      "adopted_at": "2026-11-01T05:57:23+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -57,7 +68,7 @@
       "task_id": "e9a97f2c-eed7-4acd-85ab-f230bc9b84de",
       "chapter": 1,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 0,
       "history": [
         {
@@ -74,10 +85,79 @@
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "record_sha256": "be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_3b5729b9dd55b4a47bdf12e83d6cc261fc12364e457463b1f418720a1e043dd9.json",
+        "sha256": "3b5729b9dd55b4a47bdf12e83d6cc261fc12364e457463b1f418720a1e043dd9",
+        "used": true
+      }
+    },
+    "promises": {
+      "P-EAST-VERIFY": {
+        "history": [
+          {
+            "id": "P-EAST-VERIFY",
+            "action": "set",
+            "deadline_chapter": 2,
+            "reason": "第二站城东的零雨必须独立核验；当前仍未完成，不更改历史到期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+              "quote": "这一次，零也必须是真的。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 2,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P-GRAIN-WINDOW": {
+        "history": [
+          {
+            "id": "P-GRAIN-WINDOW",
+            "action": "set",
+            "deadline_chapter": 20,
+            "reason": "五分以上复核可导致三日缓粮，虽卢家急补实际发出但批量救粮仍待落实；当前仍未完成，不更改历史到期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+              "quote": "那三日落在纸上，只是一道勾。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 20,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P-RAIN-RAW": {
+        "history": [
+          {
+            "id": "P-RAIN-RAW",
+            "action": "set",
+            "deadline_chapter": 10,
+            "reason": "北岗原测九分被县署登记待核，仍需正式复核和保全原簿；当前仍未完成，不更改历史到期。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+              "quote": "县署尚未核定降水来源及全县影响。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 10,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
   },
   "writing_briefs": {

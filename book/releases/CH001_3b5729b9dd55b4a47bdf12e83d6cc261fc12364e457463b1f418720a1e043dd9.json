@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
+  "chapter": 1,
+  "base_revision": 3,
+  "task_id": "e9a97f2c-eed7-4acd-85ab-f230bc9b84de",
+  "repairs": 0,
+  "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+  "record_sha256": "be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86",
+  "canon_sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+  "roadmap_sha256": "53965e53b389cc2f44ffb86a2a1d2065ca6c503af8b596327947a240dd470018",
+  "narrative_review_version": 1,
+  "writing_brief_sha256": "aff0dad6fa6ec9e8d6ede59d804b8453af69e4f92d1ab99eaa877e21e84a6553",
+  "decision": "release",
+  "read_full_text": true,
+  "blocking_issues": [],
+  "read_coverage": {
+    "1": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6"
+  },
+  "reader_reason_to_continue": "县署既接北岗九分待核又送出零雨报；第二日城东的零若为真，会如何影响两处冲突证据，州粮还能否及时到？",
+  "consequence": "卢家实际领急补，四十九号仍等粮；程桑得收文但官报未改，自己可能失俸，下一章现场验雨而非重开一轮口头争辩。",
+  "ending_runway": "第二章独立核城东零分并迎北岗验站，第三章处理赈棚救粮，第四章处理校尺证据，十章内原簿正式封存。",
+  "checks": {
+    "timeline": {
+      "decision": "pass",
+      "conclusion": "卯末验水、午前到城、下午赈粮和县署、晚间母亲消息依序成立；驿卒与原簿并未瞬移，下一章仍须给验站时辰。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "卯末抵棚，见筒中水线，经尺读九分；非同筒前启封之证。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "暮鼓敲过一遍，她才想起自己尚未回北岗，站所钥匙还系在腰间。"
+        }
+      ]
+    },
+    "knowledge": {
+      "decision": "pass",
+      "conclusion": "宋榆不假扮落雨目击者，程桑未知次日验站人；县署与南洼知情链分明，未突然知道州府内部决定。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "我只看见筒里有水，看见你拿尺量。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "我不知道会不会来，也不知道来的是谁。"
+        }
+      ]
+    },
+    "props_resources": {
+      "decision": "pass",
+      "conclusion": "账面510石与今日可用米区分；独立病弱格经医证、保人、仓簿复核后才发，未擅动军储或让所有赈户突然有粮。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "县赈仓册上五百一十石。但那是账数，不能当今日现米。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+        }
+      ]
+    },
+    "causality": {
+      "decision": "pass",
+      "conclusion": "县丞保粮与主角保真冲突，折中为待核收文且县报不改，有利有弊而非主角言辞直接取胜。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "你可以报北岗九分、城东和南洼待核，附田情与仓情。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "收文可以。标题不写‘已证九分’，写‘北岗雨记呈请复核原测’。"
+        }
+      ]
+    },
+    "power_rules": {
+      "decision": "pass",
+      "conclusion": "主角没县印、仓权和州府裁定力，收文小记号不等于县合报印，证言边界留下可追责空间。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "那就先别急着教我怎么做官。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "县署尚未核定降水来源及全县影响。"
+        }
+      ]
+    },
+    "promises": {
+      "decision": "pass",
+      "conclusion": "卢家一份急补和县署收文已作局部兑现，仍有北岗核验、全县缓粮和城东复核三项开放承诺，分别设定CH010、CH020、CH002。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "那三日落在纸上，只是一道勾。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "这一次，零也必须是真的。"
+        }
+      ]
+    },
+    "anti_repeat": {
+      "decision": "pass",
+      "conclusion": "第一章没有旧正式章节可查；章内的测量、救粮与县署收文在目标、执行方式与具体代价上不同，非同一场手续争执重复三次。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "宋榆的祖父低头数自己的号牌。那是四十九。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "最后誊出的收文联用了三重写法"
+        }
+      ]
+    },
+    "character_agency": {
+      "decision": "pass",
+      "conclusion": "程桑自选保留有限可核收文而不拦公报，代价是冒擅离和失俸风险；贺渊坚持不断粮也主动给复核入口。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "她本想追出去拦马。脚步迈到石阶上，她却停住。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "我只要你在我这本原簿上承认：它有九分。"
+        }
+      ]
+    }
+  },
+  "comparison": [],
+  "future_window": [
+    {
+      "chapter": 2,
+      "goal": "到城东站核零并赶回北岗迎验站",
+      "change": "取得独立零雨与北岗雨界，承认差异不等于伪证",
+      "ending_question": "原测能经得起县署筒尺封条检验吗？"
+    },
+    {
+      "chapter": 3,
+      "goal": "核普通赈棚断粮，争合法急发副票",
+      "change": "从卢家一份病弱急补推进有真实签领的多户安排",
+      "ending_question": "州府三日缓发若到，县仓靠什么支撑？"
+    },
+    {
+      "chapter": 4,
+      "goal": "在合法界限内校准铜尺、封存见证",
+      "change": "原物控制权受限，要用公开校尺和多人见证保住证据",
+      "ending_question": "没有原尺在手，九分还可信么？"
+    }
+  ],
+  "promise_reviews": [
+    {
+      "id": "P-EAST-VERIFY",
+      "action": "set",
+      "deadline_chapter": 2,
+      "reason": "第二站城东的零雨必须独立核验；当前仍未完成，不更改历史到期。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "这一次，零也必须是真的。"
+      }
+    },
+    {
+      "id": "P-GRAIN-WINDOW",
+      "action": "set",
+      "deadline_chapter": 20,
+      "reason": "五分以上复核可导致三日缓粮，虽卢家急补实际发出但批量救粮仍待落实；当前仍未完成，不更改历史到期。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "那三日落在纸上，只是一道勾。"
+      }
+    },
+    {
+      "id": "P-RAIN-RAW",
+      "action": "set",
+      "deadline_chapter": 10,
+      "reason": "北岗原测九分被县署登记待核，仍需正式复核和保全原簿；当前仍未完成，不更改历史到期。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "县署尚未核定降水来源及全县影响。"
+      }
+    }
+  ],
+  "incident_actions": [],
+  "opening": {
+    "first_hook": {
+      "quote": "铜雨筒里的水，已经漫过第九道细线。",
+      "why": "首句具体九分水位，200字内出现已盖印的全县零雨。"
+    },
+    "core_promise": {
+      "quote": "那三日落在纸上，只是一道勾。",
+      "why": "首千字把局部实测与州府复核可能缓粮、赈棚等粮的人联系起来。"
+    },
+    "protagonist_impact": {
+      "quote": "丢了差事，不只她一人挨苦。",
+      "why": "首3000字明确程桑失俸牵连母亲的个人代价。"
+    }
+  },
+  "narrative_review": {
+    "schema_version": 1,
+    "actual_scenes": [
+      {
+        "event": "北岗九分撞预印零雨报告",
+        "choice": "程桑记真数并限制宋榆见证范围",
+        "change": "实测和县报形成可质证冲突",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "铜雨筒里的水，已经漫过第九道细线。"
+          }
+        ]
+      },
+      {
+        "event": "桥上分雨界、赈棚停普通号粮",
+        "choice": "转去了解病弱急补而不是只争自己读数",
+        "change": "从抽象复核风险变为四十九号老人当天没领粮",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "宋榆的祖父低头数自己的号牌。那是四十九。"
+          }
+        ]
+      },
+      {
+        "event": "药铺核病情，仓簿核票、邻人作保",
+        "choice": "不越权要求开仓，通过合法票据办理",
+        "change": "卢家真实取得一份病弱急补而其他人仍待粮",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+          }
+        ]
+      },
+      {
+        "event": "县丞拒改正式合报、接受待核收文",
+        "choice": "主角要求收文写清限定证明力和时辰",
+        "change": "取得程序可追溯的异议而非全面胜利",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "收文可以。标题不写‘已证九分’，写‘北岗雨记呈请复核原测’。"
+          }
+        ]
+      },
+      {
+        "event": "零雨合报离县，南洼捎干叶",
+        "choice": "不拦驿马，记下出送事实，转向城东核零",
+        "change": "开放的矛盾从一站有雨转向不同站都须如实记录",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "这一次，零也必须是真的。"
+          }
+        ]
+      }
+    ],
+    "plan_comparison": "原计划五场依次验雨、路途赈棚、急补兑现、县署收文与亲人后果；实际急补程序得到更充分展示，原簿没有提前正式封柜，CH010的正式保管目标仍未兑现。",
+    "reader": {
+      "mode": "same_context_approximation",
+      "limitation": "同一创作会话进行写作和审读，不能独立忘记设定；按正文证据检验可理解性，不冒充外部真实读者。",
+      "coverage": {
+        "1": {
+          "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "mode": "full_text"
+        }
+      },
+      "understanding": "可辨北岗九分是单站实测，零雨县报是盖印的简化总报，县署收文仍待核；主角既不能随意救粮也不能自行改州报。",
+      "information_load": "规章从测尺、号牌、药纸、收文串起，县署讨论略密但有可见动作和局部救粮承接；后续减轻桌前报表解释。",
+      "promise_delivery": "一户病弱急补和限定收文已兑现；四十九号缺粮、验站以及州府缓发未解决。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "铜雨筒里的水，已经漫过第九道细线。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "quote": "县署尚未核定降水来源及全县影响。"
+        }
+      ],
+      "issues": [
+        {
+          "severity": "suggestion",
+          "status": "open",
+          "reason": "县署现场解释较密，不过主角最终得到具体且有限的收文；CH002应更多现场测量而非重复衙门争论。",
+          "evidence": {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "我上月给州里递了五次催运，只有两次回函。"
+          }
+        }
+      ]
+    },
+    "character_causality": {
+      "opposition": {
+        "status": "reviewed",
+        "conclusion": "贺县丞主动维护不断粮而不承认县报立即改数，也给待核收文，反面力量有自身利益和权力边界。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "一个雨记的原簿，在本所自然可以写九分。"
+          },
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "收文可以。标题不写‘已证九分’，写‘北岗雨记呈请复核原测’。"
+          }
+        ]
+      },
+      "dialogue": {
+        "status": "reviewed",
+        "conclusion": "宋榆说见证边界、岑野说账实、程桑说雨站限定、贺渊说缓粮，话语各服务自身诉求。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "他没看见的不说，才是见证。"
+          },
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "那是账数，不能当今日现米。"
+          }
+        ]
+      },
+      "aftermath": {
+        "status": "reviewed",
+        "conclusion": "收文与零雨县报并存，卢家得粮而祖父仍待，母亲枯叶将主角视角从北岗真数拉回南洼。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "日光向西斜时，县署门内又有人把本县无雨的总报交给驿房。"
+          },
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "这一次，零也必须是真的。"
+          }
+        ]
+      }
+    },
+    "history": {
+      "index_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queries": [],
+      "comparisons": [],
+      "no_match_reason": "本书目前只有CH001候选，正式旧章为0，全书可比历史来源为空，不虚构查旧章的比较结果。章内测雨、救粮、收文已呈现不同办法与成本。"
+    },
+    "reader_updates": [
+      {
+        "kind": "observed",
+        "statement": "北岗九分原测与盖印的全县零雨报发生直接矛盾，合报未改。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "承平十七年六月初七，本县无雨。"
+          }
+        ]
+      },
+      {
+        "kind": "observed",
+        "statement": "卢家已领取一份病弱急补，不能推断其他号粮已经兑付。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "暮色未到，红布箱里最后一份病弱急补经仓吏量斗、岑野签出，真的交到了卢家妇人手中。"
+          }
+        ]
+      },
+      {
+        "kind": "claim",
+        "statement": "岑野说县仓账面510石，不等于核实可用现米。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "县赈仓册上五百一十石。但那是账数，不能当今日现米。"
+          }
+        ]
+      },
+      {
+        "kind": "observed",
+        "statement": "县署待核收文存在但不能等同州府已接受真雨。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "县署尚未核定降水来源及全县影响。"
+          }
+        ]
+      },
+      {
+        "kind": "uncertain",
+        "statement": "城东零雨未实测、北岗明日验站未知结果。",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+            "quote": "我不知道会不会来，也不知道来的是谁。"
+          }
+        ]
+      }
+    ],
+    "reader_update_note": "从实际正文区分已观察到的原测、已交付粮、县署登记以及人物称述和仍未核实的其他站情况。",
+    "surface_findings": []
+  }
+}
