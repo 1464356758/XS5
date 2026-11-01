@@ -11,26 +11,26 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS5",
     "branch": "main",
-    "generated_at": "2026-11-01T09:33:34+00:00",
-    "state_revision": 4,
-    "workflow_revision": 9,
-    "state_sha256": "c87961ed5732172fc65e6ed3a97225c4f29c9973b7227ed12aca16132fec0c56",
-    "workflow_sha256": "7fbdc5fa85f6da213fccf7a9982fe25a5018008f3ddb2b5a6ef758cfa5a071f9",
+    "generated_at": "2026-11-01T09:34:23+00:00",
+    "state_revision": 5,
+    "workflow_revision": 10,
+    "state_sha256": "f6a4c29c7423447000de7c22686a419c9cd10c34c751c554b1763e4e6a93a45c",
+    "workflow_sha256": "7bca9620162ec3e2848d542cb1688dc33f8ee1e82777aab1a4ff7fcd46d8c9ab",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 1,
+    "adopted_chapters": 2,
     "target_han": 900000,
-    "actual_han": 9594,
+    "actual_han": 19141,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 1,
+    "frozen_chapters": 2,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
@@ -40,10 +40,10 @@
   "task": {
     "phase": "WAITING_NEXT",
     "label": "等待下一章",
-    "chapter": 2,
-    "detail": "CH001《印比雨先到》已完成V4.3正文与叙事证据审核，release-check通过，采用冻结；未登记咪咕平台发布。",
-    "next_action": "作者再次授权时只执行CH002；先读取CH001全部冻结正文与事实账，城东零雨现场核对，禁止修改CH001。",
-    "updated_at": "2026-11-01T05:57:23+00:00"
+    "chapter": 3,
+    "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
+    "next_action": "读取正式状态后，由下一次日更处理下一章。",
+    "updated_at": "2026-11-01T09:34:23+00:00"
   },
   "chapters": [
     {
@@ -53,6 +53,18 @@
       "han_count": 9594,
       "text_path": "book/chapters/CH001_2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6.txt",
       "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 2,
+      "title": "九分不是一县的雨",
+      "stage": "S01",
+      "han_count": 9547,
+      "text_path": "book/chapters/CH002_82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062.txt",
+      "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -336,6 +348,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "CH001《印比雨先到》已完成V4.3正文与叙事证据审核，release-check通过，采用冻结；未登记咪咕平台发布。"
+    },
+    {
+      "at": "2026-11-01T09:34:23+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ]
 }

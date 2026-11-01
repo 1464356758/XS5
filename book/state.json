@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "title": "《大旱那年，官府不许我们记雨》",
-  "revision": 4,
+  "revision": 5,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -31,6 +31,16 @@
       "record_sha256": "be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86",
       "han_count": 9594,
       "adopted_at": "2026-11-01T05:57:23+00:00"
+    },
+    "2": {
+      "title": "九分不是一县的雨",
+      "stage": "S01",
+      "text_path": "chapters/CH002_82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062.txt",
+      "text_sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+      "record_path": "records/CH002_42c5ea85e3d81be118a5d1b81ad36a6cd514ca0b4769556d59290fee6ac2401d.json",
+      "record_sha256": "42c5ea85e3d81be118a5d1b81ad36a6cd514ca0b4769556d59290fee6ac2401d",
+      "han_count": 9547,
+      "adopted_at": "2026-11-01T09:34:23+00:00"
     }
   },
   "checkpoints": [],
@@ -84,7 +94,7 @@
       "task_id": "6af0e36c-11db-4559-9c2d-c556314a2253",
       "chapter": 2,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 0,
       "history": [
         {
@@ -105,6 +115,10 @@
       "1": {
         "text_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
         "record_sha256": "be940f453036caec6a30d1f0a28ef931544d37d52088b9e910325030ba76ae86"
+      },
+      "2": {
+        "text_sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+        "record_sha256": "42c5ea85e3d81be118a5d1b81ad36a6cd514ca0b4769556d59290fee6ac2401d"
       }
     },
     "published": {},
@@ -117,7 +131,7 @@
       "2": {
         "path": "releases/CH002_b37b92a3a6d0022529f940680212bf1ebe35cf0b2b8a538c5f806e952db57b85.json",
         "sha256": "b37b92a3a6d0022529f940680212bf1ebe35cf0b2b8a538c5f806e952db57b85",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -134,11 +148,23 @@
               "quote": "这一次，零也必须是真的。"
             },
             "chapter": 1
+          },
+          {
+            "id": "P-EAST-VERIFY",
+            "action": "complete",
+            "deadline_chapter": 2,
+            "reason": "CH002已查城东旧筒、原簿与阿芜的独立有限见证，六月初七卯末未见可计水线；明确不延伸到全天全县。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+              "quote": "阿芜接过自己的笔，写了一张极短的见证：六月初七卯末，于城东站见铜筒未显可计水线。"
+            },
+            "chapter": 2
           }
         ],
         "deadline_chapter": 2,
-        "status": "open",
-        "last_reviewed_chapter": 1
+        "status": "closed",
+        "last_reviewed_chapter": 2
       },
       "P-GRAIN-WINDOW": {
         "history": [
@@ -157,7 +183,7 @@
         ],
         "deadline_chapter": 20,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P-RAIN-RAW": {
         "history": [
@@ -176,7 +202,7 @@
         ],
         "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       }
     },
     "incidents": {}
