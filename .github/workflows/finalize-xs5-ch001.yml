@@ -1,0 +1,114 @@
+name: XS5 CH001 evidence release and freeze (one shot)
+on:
+  push:
+    paths:
+      - '.github/workflows/finalize-xs5-ch001.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    if: github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Guard exact pending candidate and author approval
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path('book/state.json').read_text())
+          w=json.loads(Path('book/workflow.json').read_text())
+          assert s['book_id']==w['book_id']=='2b285e23-d842-4102-9f56-c55a1d6357b0'
+          assert w['phase']=='REVIEWING' and w['selected_topic']['id']=='T14' and w['platform']=='migu'
+          assert not s['chapters'] and s['revision']==3
+          task=s['tasks']['1']
+          assert task['phase']=='candidate' and task['repairs']==0
+          assert task['candidate_sha256']=='2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6'
+          assert s['serialization']['enabled'] and not s['serialization']['frozen']
+          assert not Path('book/daily/active.json').exists(), 'This is an authorized manual chapter, not a scheduled daily run'
+          assert s['config']['serial_mode'] and s['config']['narrative_review_required']
+          PY
+      - name: Reconstruct chapter record from manually reviewed exact textual evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 drafts/CH001_review_once.py record
+          python3 tools/novel_state.py --root book check-record --text drafts/CH001_未审全文.txt --record drafts/CH001_章后记录.json
+          python3 tools/novel_state.py --root book context --profile reader --text drafts/CH001_未审全文.txt --out drafts/CH001_reader_context.txt
+          python3 tools/novel_state.py --root book release-request --text drafts/CH001_未审全文.txt --record drafts/CH001_章后记录.json --out drafts/CH001_release_pending.json
+      - name: Apply eight distinct authored checks and V4.3 limited-reader evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 drafts/CH001_review_once.py review
+          python3 - <<'PY'
+          import json
+          r=json.load(open('drafts/CH001_发布前审读报告.json'))
+          assert r['narrative_review']['reader']['mode']=='same_context_approximation'
+          assert len(r['checks'])==8 and {k:v['decision'] for k,v in r['checks'].items()}=={k:'pass' for k in r['checks']}
+          assert len(r['narrative_review']['actual_scenes'])==5
+          assert all(p['deadline_chapter'] in (2,10,20) for p in r['promise_reviews'])
+          assert r['opening']['first_hook']['quote'] and r['opening']['protagonist_impact']['quote']
+          assert r['comparison']==[] and r['incident_actions']==[]
+          print('AUTHOR-REVIEW SOURCE-BOUND',r['text_sha256'],len(r['promise_reviews']))
+          PY
+          python3 tools/novel_state.py --root book release-check --text drafts/CH001_未审全文.txt --record drafts/CH001_章后记录.json --report drafts/CH001_发布前审读报告.json
+      - name: Adopt and freeze exactly one chapter and sync reader
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/novel_state.py --root book adopt --text drafts/CH001_未审全文.txt --record drafts/CH001_章后记录.json
+          python3 tools/online_state.py task --phase WAITING_NEXT --chapter 2 --detail 'CH001《印比雨先到》已完成V4.3正文与叙事证据审核，release-check通过，采用冻结；未登记咪咕平台发布。' --next '作者再次授权时只执行CH002；先读取CH001全部冻结正文与事实账，城东零雨现场核对，禁止修改CH001。'
+          python3 tools/online_state.py build-index
+          python3 tools/online_state.py validate-index
+          python3 tools/novel_state.py --root book status
+          python3 - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          s=json.loads(Path('book/state.json').read_text())
+          w=json.loads(Path('book/workflow.json').read_text())
+          i=json.loads(Path('online/index.json').read_text())
+          assert s['revision']==4 and sorted(s['chapters'])==['1'] and sorted(s['serialization']['frozen'])==['1']
+          c=s['chapters']['1']
+          assert c['han_count']==9594
+          assert c['text_sha256']=='2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6'
+          assert hashlib.sha256((Path('book')/c['text_path']).read_bytes()).hexdigest()==c['text_sha256']
+          assert hashlib.sha256((Path('book')/c['record_path']).read_bytes()).hexdigest()==c['record_sha256']
+          assert s['serialization']['frozen']['1']['record_sha256']==c['record_sha256']
+          gate=s['serialization']['gates']['1']
+          assert gate['used'] is True
+          assert hashlib.sha256((Path('book')/gate['path']).read_bytes()).hexdigest()==gate['sha256']
+          assert s['tasks']['1']['phase']=='adopted' and s['tasks']['1']['repairs']==0
+          assert not s['serialization']['published']
+          assert w['chapter']==2 and w['phase']=='WAITING_NEXT' and i['task']['phase']=='WAITING_NEXT'
+          assert i['progress']['adopted_chapters']==1 and i['chapters'][0]['frozen'] is True
+          assert i['chapters'][0]['publication_status']=='unreported'
+          assert set(s['serialization']['promises'])=={'P-RAIN-RAW','P-GRAIN-WINDOW','P-EAST-VERIFY'}
+          print('FROZEN_CH001_PRECOMMIT_OK',c['text_sha256'],c['han_count'],c['adopted_at'])
+          PY
+      - name: Run deterministic suite and nonforce GitHub commit with remote readback
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p 'test_*.py' -q
+          python3 tools/online_state.py validate-index
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add book/state.json book/workflow.json book/chapters book/records book/releases online/index.json
+          git add -f drafts/CH001_章后记录.json drafts/CH001_发布前审读报告.json
+          git diff --cached --quiet && { echo 'Expected freeze changes absent'; exit 1; }
+          git commit -m 'feat(xs5): release-check and freeze CH001 with reviewed record'
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git push origin HEAD:refs/heads/main
+          git fetch --quiet origin main
+          test "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD)"
+          for f in book/state.json book/workflow.json online/index.json; do diff -q "$f" <(git show "FETCH_HEAD:$f"); done
+          python3 tools/online_state.py validate-index
+          echo "XS5_CH001_FROZEN_REMOTE_READBACK_PASS $(git rev-parse HEAD)"
