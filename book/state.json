@@ -52,7 +52,24 @@
       "reason": "T14完整100章十阶段路线与前五章场景计划"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "e9a97f2c-eed7-4acd-85ab-f230bc9b84de",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+      "candidate_path": "candidates/CH001_2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,
@@ -62,5 +79,11 @@
     "gates": {},
     "promises": {},
     "incidents": {}
+  },
+  "writing_briefs": {
+    "1": {
+      "path": "briefs/CH001_aff0dad6fa6ec9e8d6ede59d804b8453af69e4f92d1ab99eaa877e21e84a6553.json",
+      "sha256": "aff0dad6fa6ec9e8d6ede59d804b8453af69e4f92d1ab99eaa877e21e84a6553"
+    }
   }
 }

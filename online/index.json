@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS5",
     "branch": "main",
-    "generated_at": "2026-10-31T15:34:44+00:00",
+    "generated_at": "2026-11-01T05:51:25+00:00",
     "state_revision": 3,
-    "workflow_revision": 6,
-    "state_sha256": "1c06b82980e1c45baf50d73f3dd2326d6dfcc7422375db74f390e68ac76577ee",
-    "workflow_sha256": "c2fcff78648ee6926288d1f4e22a45082cece6ead209341f01de70f6509deedb",
+    "workflow_revision": 8,
+    "state_sha256": "4517c5bd9638e61cc14df45ed11671cf6c45526ccd6a626682f8fdec38d4ca9e",
+    "workflow_sha256": "1134e8f296508b22ebd1e5a59268574b440c4da28338f9681604cae1c9e0c5c5",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "PLANNING",
-    "label": "长篇规划",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 1,
-    "detail": "T14已正式选定；作者设定、人物知情与资源基线、完整100章十阶段路线及前5章细案已保存并核验；正文0章。",
-    "next_action": "等待作者明确开始写，才执行第一章的brief-request、完整正文、叙事与八项审核、release-check、冻结及远端回读。",
-    "updated_at": "2026-10-31T15:34:43+00:00"
+    "detail": "CH001《印比雨先到》完整草稿实测字数达标，已登记唯一候选；正在逐项做正文证据、因果及叙事审核，尚未采用。",
+    "next_action": "复核关键时序、粮权、知情与局部救粮兑现；release-check通过才冻结。",
+    "updated_at": "2026-11-01T05:51:25+00:00"
   },
   "chapters": [],
   "topics": [
@@ -305,6 +305,18 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "T14已正式选定；作者设定、人物知情与资源基线、完整100章十阶段路线及前5章细案已保存并核验；正文0章。"
+    },
+    {
+      "at": "2026-11-01T05:51:24+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "作者已授权第一章；已完成全文起草，执行候选与引用审核。"
+    },
+    {
+      "at": "2026-11-01T05:51:25+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "CH001《印比雨先到》完整草稿实测字数达标，已登记唯一候选；正在逐项做正文证据、因果及叙事审核，尚未采用。"
     }
   ]
 }
