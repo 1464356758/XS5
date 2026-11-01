@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
+  "chapter": 2,
+  "run_id": "0beb6dd173074f2ebdbb48d0118813d8",
+  "phase": "draft_complete_unreviewed",
+  "draft_path": "drafts/CH002_未审全文.txt",
+  "git_blob_sha": "61344b9d3d2bf2578a2186c21b2c915d6ab010e1",
+  "measured_han": 9547,
+  "completed_scenes": [
+    "城东雨筒人为倒水与证人",
+    "站所复核与反统一口径",
+    "桥上水车实际损失",
+    "北岗现场复验与有限记录",
+    "宋榆领粮号牌与下章目标"
+  ],
+  "next": "brief-check并生成writer资料，登记同章candidate，生成reader资料，按V4.3逐条审核record/release，合格后仅冻结CH002并完成当次daily finish",
+  "part_blob_shas": [
+    "7be276f2b20aa34bdff5ea531d77f88e07038830",
+    "b5e5e16f60434c4101209f08c40fb07280f4020d",
+    "a2673171c5247e26cdd201c74c4814d59aaa1422",
+    "c8ca58b6a04a38dccf791e3b6aca1dd998e76d7a",
+    "7a6410633d3cc2b5f1ef04cb8a1f499a8d7d25dc",
+    "6326aba992ef948be376db425befa37dade5ebc0",
+    "174bc23eb3a52a2f8ec93c2ba74cdbdd5a064c73",
+    "526aa1e716411618941fc43b1c24a87c8b911a53",
+    "e9b5dbf2bbbaeb20306f1928b90179558e09d60c",
+    "5efb0faaa02a1c17f0f98d57f13e57b6c11c3f06"
+  ]
+}
