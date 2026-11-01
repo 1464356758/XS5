@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch002begin20261101a9c31",
-  "base_sha": "615f487dd867de663a59fc4458cec76160f6229f",
+  "request_id": "xs5ch002prep20261101a9c31",
+  "base_sha": "6046fb04a5936c6664a6c2a4081903a4e2dd8750",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -9,5 +9,44 @@
     "session_id": "xs5ch002manual20261101a9c31",
     "platform_run_id": null
   },
-  "phase": "begin"
+  "phase": "command",
+  "run_id": "0beb6dd173074f2ebdbb48d0118813d8",
+  "commands": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "author",
+        "--query",
+        "北岗九分 城东零雨 宋榆 贺渊 雨簿 原测",
+        "--out",
+        "drafts/CH002_author_context.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "history-search",
+        "--query",
+        "北岗 九分 城东 零雨 悬疑 见证",
+        "--limit",
+        "5"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "brief-request",
+        "--out",
+        "drafts/CH002_brief.json"
+      ]
+    }
+  ]
 }
