@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch002prep20261101a9c31",
-  "base_sha": "6046fb04a5936c6664a6c2a4081903a4e2dd8750",
+  "request_id": "xs5ch002candidate20261101a9c31",
+  "base_sha": "dc84a9b5c5e2c5cb23739a78191cc5c19ac09d91",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -17,23 +17,9 @@
       "args": [
         "--root",
         "book",
-        "context",
-        "--profile",
-        "author",
-        "--query",
-        "北岗九分 城东零雨 宋榆 贺渊 雨簿 原测",
-        "--out",
-        "drafts/CH002_author_context.txt"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
         "history-search",
         "--query",
-        "北岗 九分 城东 零雨 悬疑 见证",
+        "县署 收文 急补 岑野 零雨",
         "--limit",
         "5"
       ]
@@ -43,9 +29,47 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
+        "brief-check",
+        "--file",
         "drafts/CH002_brief.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "writer",
+        "--out",
+        "drafts/CH002_writer_context.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "candidate",
+        "--chapter",
+        "2",
+        "--text",
+        "drafts/CH002_未审全文.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "reader",
+        "--text",
+        "drafts/CH002_未审全文.txt",
+        "--out",
+        "drafts/CH002_reader_context.txt"
       ]
     }
   ]
