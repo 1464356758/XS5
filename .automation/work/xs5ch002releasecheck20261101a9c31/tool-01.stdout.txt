@@ -1,0 +1,5 @@
+{
+  "valid_mechanically": true,
+  "path": "releases/CH002_b37b92a3a6d0022529f940680212bf1ebe35cf0b2b8a538c5f806e952db57b85.json",
+  "note": "可执行采用；不证明文学质量、实际阅读行为或平台发布。"
+}
