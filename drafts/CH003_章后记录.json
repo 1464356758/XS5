@@ -1,0 +1,170 @@
+{
+  "chapter": 3,
+  "title": "赈棚外的第三日",
+  "stage": "S01",
+  "base_revision": 5,
+  "canon_sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+  "text_sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+  "complete": true,
+  "story_time_end": 3730,
+  "summary": "承平十七年六月初九，宋榆祖父四十九号三日才拿到无额待票，陶三娘带病女小禾持五十号等一升。程桑由北岗赴县，查出西仓四袋南棚粮已记八斗却困坏车未到棚。岑野付十二文、苦力自退六文，租车复称七斗六升可食、四升损失；二十六户实领五斗二升，余二斗四升封棚。陶家一升、宋阿翁两升实际到账，旧欠未清、病人未愈。宁望外乡工匠无县籍未获粮。县署告示次晨取旧尺比校，程桑返北岗守原簿。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "县赈仓册上五百一十石。但那是账数，不能当今日现米。"
+      },
+      {
+        "chapter": 2,
+        "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+        "quote": "他等到日头偏西，还是没叫到。"
+      },
+      {
+        "chapter": 2,
+        "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+        "quote": "明日我得去问岑野，急发副票究竟少哪一个人的签。"
+      }
+    ],
+    "conclusion": "已实读CH001—CH003正文及限定信息资料：四十八号卢家、四十九号宋阿翁、五十号陶家不冲突。区分仓出/过门/棚收/户领；账面八斗、可食七斗六升、实领五斗二升、余二斗四升和四升损耗守恒，未凭空挪县仓或军储；十八文有明确个人来源，旧欠未清，病者未痊愈，北岗原簿未交接。与CH001病弱一户急补和CH002测雨/桥车不同，本章有26户实粮兑现。仍有文簿说明较密的轻度节奏建议，下一章转到现场尺具。reader为same_context_approximation。"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "queue:49-day3",
+      "value": "四十九号初七初八未领，初九最终领两升，往日缺额仍未清偿",
+      "holder": "",
+      "valid_from": 3040,
+      "valid_until": null,
+      "quote": "前两日未领仍照记。今天这两升是这车原先配给你的数。"
+    },
+    {
+      "kind": "fact",
+      "key": "queue:50-sick",
+      "value": "陶三娘家是五十号，小禾病未痊愈，本日领一升",
+      "holder": "",
+      "valid_from": 3450,
+      "valid_until": null,
+      "quote": "便将五十号陶家先叫到桌前。"
+    },
+    {
+      "kind": "fact",
+      "key": "grain:cart-stopped",
+      "value": "南棚原配四袋因送粮车坏未真正出仓门，出账与户领不可混淆",
+      "holder": "",
+      "valid_from": 3180,
+      "valid_until": null,
+      "quote": "说是送粮，却连门都没过。"
+    },
+    {
+      "kind": "fact",
+      "key": "grain:nominal-eight",
+      "value": "四袋原记每袋两斗共八斗，仅为配粮纸额",
+      "holder": "",
+      "valid_from": 3240,
+      "valid_until": null,
+      "quote": "账上写的是四袋，每袋两斗，合八斗"
+    },
+    {
+      "kind": "fact",
+      "key": "grain:real-seven-six",
+      "value": "四袋复称可食七斗六升，四升漏失混砂不能食用",
+      "holder": "",
+      "valid_from": 3340,
+      "valid_until": null,
+      "quote": "只有七斗六升。"
+    },
+    {
+      "kind": "fact",
+      "key": "cart:18wen",
+      "value": "岑野自付十二文、押车苦力退六文，租车十八文而未动公款",
+      "holder": "",
+      "valid_from": 3310,
+      "valid_until": null,
+      "quote": "岑野把十二文和六文一同推给沈掌柜"
+    },
+    {
+      "kind": "fact",
+      "key": "grain:26-households",
+      "value": "南棚二十六户实际领取五斗二升，不把上一日装车重复算入",
+      "holder": "",
+      "valid_from": 3580,
+      "valid_until": null,
+      "quote": "实发五斗二升"
+    },
+    {
+      "kind": "state",
+      "key": "grain:two-four-sealed",
+      "value": "剩余二斗四升仍在棚中封存，没有发到户",
+      "holder": "",
+      "valid_from": 3590,
+      "valid_until": null,
+      "quote": "还有二斗四升不能因为暮色近了"
+    },
+    {
+      "kind": "state",
+      "key": "grain:four-loss",
+      "value": "复称短四升有漏袋证据，但未查实盗粮",
+      "holder": "",
+      "valid_from": 3370,
+      "valid_until": null,
+      "quote": "少了四升。"
+    },
+    {
+      "kind": "state",
+      "key": "outsider:ningwang",
+      "value": "宁望下川木匠无本县旧额未领取县粮，只可能次日受雇",
+      "holder": "",
+      "valid_from": 3610,
+      "valid_until": null,
+      "quote": "宁望下川来的。"
+    },
+    {
+      "kind": "state",
+      "key": "north:raw-book",
+      "value": "北岗原簿还在站所锁柜，未被县署收走",
+      "holder": "",
+      "valid_from": 3050,
+      "valid_until": null,
+      "quote": "簿仍锁在棚内木柜"
+    },
+    {
+      "kind": "state",
+      "key": "north:ruler-order",
+      "value": "县署打算翌晨取旧尺比校，接收人与交接方式尚未公布",
+      "holder": "",
+      "valid_from": 3680,
+      "valid_until": null,
+      "quote": "县署决定将北岗原用铜尺取回县内比校"
+    }
+  ],
+  "progression": {
+    "goal": "把南棚已经配给、却停在路上的口粮送到等了三日的人手中。",
+    "obstacle": "仓簿装车误作出账、车轴损坏、租车费缺口和四升漏损、拥挤与跨棚资格限制。",
+    "method": "核查坏车及封记，岑野自付与苦力退费租车，实称后押运，现场旧票与新票对照，逐户真正交粮。",
+    "choice": "不越权新开仓、不挪其他棚粮、不把昨日配出的八斗与今日实领重复合算，承担实际营运成本。",
+    "result": "26户实领五斗二升，其中陶家一升、宋阿翁两升；余二斗四升封存、四升损失待核。",
+    "consequence": "岑野自付十二文影响妹妹药钱、苦力退六文，病者未愈、外乡工人无粮资格，宋阿翁前两日缺额仍在；次晨县署借尺。",
+    "next_options": "CH004《铜尺借不走》处理北岗尺具交接；CH005《副页上有泥》并完成1—5章回看；CH006调查第三人证言。",
+    "scene_function": "三日空粮票与病人→追四袋困车→自费换车复称→当面兑粮→外乡资格、北岗取尺危机。"
+  },
+  "thread_events": [
+    {
+      "id": "P-GRAIN-WINDOW",
+      "action": "partial",
+      "description": "已配普通粮只完成26户实际兑付，大范围三日急粮和新副票仍未解决，维持CH020期限。",
+      "quote": "南棚一共核出二十六户当日确有旧额、并在场领到了粮。"
+    },
+    {
+      "id": "P-RAIN-RAW",
+      "action": "develop",
+      "description": "北岗原簿仍锁存，县署要求次日借旧尺，正式封存未完成，维持CH010期限。",
+      "quote": "县署决定将北岗原用铜尺取回县内比校"
+    }
+  ],
+  "stage_closing": false,
+  "measured_han": 8574
+}
