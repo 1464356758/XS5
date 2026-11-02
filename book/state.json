@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "title": "《大旱那年，官府不许我们记雨》",
-  "revision": 5,
+  "revision": 6,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -41,6 +41,16 @@
       "record_sha256": "42c5ea85e3d81be118a5d1b81ad36a6cd514ca0b4769556d59290fee6ac2401d",
       "han_count": 9547,
       "adopted_at": "2026-11-01T09:34:23+00:00"
+    },
+    "3": {
+      "title": "赈棚外的第三日",
+      "stage": "S01",
+      "text_path": "chapters/CH003_9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5.txt",
+      "text_sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+      "record_path": "records/CH003_8033f48f879c4c2255db740227082cf1a602b0dd98ea29ab6f528af33a7f2361.json",
+      "record_sha256": "8033f48f879c4c2255db740227082cf1a602b0dd98ea29ab6f528af33a7f2361",
+      "han_count": 8574,
+      "adopted_at": "2026-11-02T04:54:51+00:00"
     }
   },
   "checkpoints": [],
@@ -110,7 +120,7 @@
       "task_id": "780ba39e-26d2-4f2b-bc15-884dd67b23d8",
       "chapter": 3,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 0,
       "history": [
         {
@@ -135,6 +145,10 @@
       "2": {
         "text_sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
         "record_sha256": "42c5ea85e3d81be118a5d1b81ad36a6cd514ca0b4769556d59290fee6ac2401d"
+      },
+      "3": {
+        "text_sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+        "record_sha256": "8033f48f879c4c2255db740227082cf1a602b0dd98ea29ab6f528af33a7f2361"
       }
     },
     "published": {},
@@ -152,7 +166,7 @@
       "3": {
         "path": "releases/CH003_943626cc61680b00458b816f1599b28f3fd0441cac352f24656430b45ad8d444.json",
         "sha256": "943626cc61680b00458b816f1599b28f3fd0441cac352f24656430b45ad8d444",
-        "used": false
+        "used": true
       }
     },
     "promises": {
@@ -204,7 +218,7 @@
         ],
         "deadline_chapter": 20,
         "status": "open",
-        "last_reviewed_chapter": 2
+        "last_reviewed_chapter": 3
       },
       "P-RAIN-RAW": {
         "history": [
@@ -223,7 +237,7 @@
         ],
         "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 2
+        "last_reviewed_chapter": 3
       }
     },
     "incidents": {}

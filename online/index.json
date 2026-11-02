@@ -11,26 +11,26 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XS5",
     "branch": "main",
-    "generated_at": "2026-11-02T04:53:55+00:00",
-    "state_revision": 5,
-    "workflow_revision": 10,
-    "state_sha256": "23450eced6f6702f7c077cf7ee0bea7fabf514e9ccc79ac600bdb2a349c76cc9",
-    "workflow_sha256": "7bca9620162ec3e2848d542cb1688dc33f8ee1e82777aab1a4ff7fcd46d8c9ab",
+    "generated_at": "2026-11-02T04:54:51+00:00",
+    "state_revision": 6,
+    "workflow_revision": 11,
+    "state_sha256": "34d257c7bf9519a11f54245116fdeefee7387aef902a5b8fc15411ea70b225ae",
+    "workflow_sha256": "bc4c9a5041e60aeeae372a1c312ca729d8b59a42544ed56e1918f6f041ff8ff2",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 2,
+    "adopted_chapters": 3,
     "target_han": 900000,
-    "actual_han": 19141,
+    "actual_han": 27715,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 2,
+    "frozen_chapters": 3,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
@@ -40,10 +40,10 @@
   "task": {
     "phase": "WAITING_NEXT",
     "label": "等待下一章",
-    "chapter": 3,
-    "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。",
+    "chapter": 4,
+    "detail": "第3章已采用并冻结；平台发布另凭真实回执登记。",
     "next_action": "读取正式状态后，由下一次日更处理下一章。",
-    "updated_at": "2026-11-01T09:34:23+00:00"
+    "updated_at": "2026-11-02T04:54:51+00:00"
   },
   "chapters": [
     {
@@ -65,6 +65,18 @@
       "han_count": 9547,
       "text_path": "book/chapters/CH002_82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062.txt",
       "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 3,
+      "title": "赈棚外的第三日",
+      "stage": "S01",
+      "han_count": 8574,
+      "text_path": "book/chapters/CH003_9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5.txt",
+      "sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -354,6 +366,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第2章已采用并冻结；平台发布另凭真实回执登记。"
+    },
+    {
+      "at": "2026-11-02T04:54:51+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第3章已采用并冻结；平台发布另凭真实回执登记。"
     }
   ]
 }
