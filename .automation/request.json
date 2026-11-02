@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch003prep20261102b4c91",
-  "base_sha": "ae07c3b984b4ec126fc252b7b166917ca4f46054",
+  "request_id": "xs5ch003candidate20261102b4c91",
+  "base_sha": "263dc4eba2a3ce706540c6d5ad6dd36f5fe74e41",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -19,7 +19,7 @@
         "book",
         "history-search",
         "--query",
-        "粮票 赈棚 四十九号 岑野 急补 兑付",
+        "发粮 兑付 赈棚 四十九号 坏车",
         "--limit",
         "5"
       ]
@@ -29,8 +29,8 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
+        "brief-check",
+        "--file",
         "drafts/CH003_brief.json"
       ]
     },
@@ -41,11 +41,35 @@
         "book",
         "context",
         "--profile",
-        "author",
-        "--query",
-        "赈棚 第三日 实粮 急发副票 仓米 49号 病者 转运",
+        "writer",
         "--out",
-        "drafts/CH003_author_context.txt"
+        "drafts/CH003_writer_context.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "candidate",
+        "--chapter",
+        "3",
+        "--text",
+        "drafts/CH003_未审全文.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "reader",
+        "--text",
+        "drafts/CH003_未审全文.txt",
+        "--out",
+        "drafts/CH003_reader_context.txt"
       ]
     }
   ]
