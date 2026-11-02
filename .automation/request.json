@@ -1,17 +1,13 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch002finalize20261101a9c31",
-  "base_sha": "8dffd019e87f4e01684dc3662a0c8e3c7ca532d4",
+  "request_id": "xs5ch003pf20261102b4c91",
+  "base_sha": "1208e997d57eea633a3d5919915faefebd04c016",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
     "automation_id": "6ae6ea4329b88191b59e266142284c16",
-    "session_id": "xs5ch002manual20261101a9c31",
+    "session_id": "xs5ch003manual20261102b4c91",
     "platform_run_id": null
   },
-  "phase": "finalize",
-  "run_id": "0beb6dd173074f2ebdbb48d0118813d8",
-  "text": "drafts/CH002_未审全文.txt",
-  "record": "drafts/CH002_章后记录.json",
-  "report": "drafts/CH002_发布前审读报告.json"
+  "phase": "preflight"
 }
