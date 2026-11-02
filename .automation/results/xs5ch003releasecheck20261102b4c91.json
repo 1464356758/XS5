@@ -1,0 +1,57 @@
+{
+  "protocol": "novel-task-executor-v1",
+  "request_id": "xs5ch003releasecheck20261102b4c91",
+  "request_sha256": "f3140bfefba1d5e36fba58042a1197fc4026665c5cf7f6bdcb93e7d16cd93c00",
+  "source_sha": "5a7cd5a76d1a26eb39a061868ab798da9f52eefa",
+  "base_sha": "a2dc9bf3ebd44682f66a76c62de932f6944d8b52",
+  "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
+  "controller": {
+    "kind": "automation",
+    "automation_id": "6ae6ea4329b88191b59e266142284c16",
+    "session_id": "xs5ch003manual20261102b4c91",
+    "platform_run_id": null
+  },
+  "phase": "command",
+  "executed_at": "2026-11-02T04:53:55+00:00",
+  "executor_status": "ok",
+  "github_run_id": "41390946251",
+  "tools": [
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "release-check",
+        "--text",
+        "drafts/CH003_未审全文.txt",
+        "--record",
+        "drafts/CH003_章后记录.json",
+        "--report",
+        "drafts/CH003_发布前审读报告.json"
+      ],
+      "exit_code": 0,
+      "outputs": {
+        "stdout": {
+          "path": ".automation/work/xs5ch003releasecheck20261102b4c91/tool-01.stdout.txt",
+          "sha256": "82bc46c970616dbf7734471234b56eed23b013408bf1576efbd2ad76916bc1fc",
+          "bytes": 223
+        },
+        "stderr": {
+          "path": ".automation/work/xs5ch003releasecheck20261102b4c91/tool-01.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "business_status": "tools_completed",
+  "run_id": "664ed0c57ac1411e92b98da80f9ad289",
+  "changed_paths": [
+    ".automation/work/xs5ch003releasecheck20261102b4c91/tool-01.stderr.txt",
+    ".automation/work/xs5ch003releasecheck20261102b4c91/tool-01.stdout.txt",
+    "book/daily/active.json",
+    "book/releases/CH003_943626cc61680b00458b816f1599b28f3fd0441cac352f24656430b45ad8d444.json",
+    "book/state.json",
+    "online/index.json"
+  ]
+}
