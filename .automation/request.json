@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch003releaseprep20261102b4c91",
-  "base_sha": "9de58149fc9628cfd16e1e2b28fb6b9579b1dcda",
+  "request_id": "xs5ch003releasecheck20261102b4c91",
+  "base_sha": "a2dc9bf3ebd44682f66a76c62de932f6944d8b52",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -17,25 +17,13 @@
       "args": [
         "--root",
         "book",
-        "check-record",
-        "--text",
-        "drafts/CH003_未审全文.txt",
-        "--record",
-        "drafts/CH003_章后记录.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "release-request",
+        "release-check",
         "--text",
         "drafts/CH003_未审全文.txt",
         "--record",
         "drafts/CH003_章后记录.json",
-        "--out",
-        "drafts/CH003_release_pending.json"
+        "--report",
+        "drafts/CH003_发布前审读报告.json"
       ]
     }
   ]
