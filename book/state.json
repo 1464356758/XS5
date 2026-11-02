@@ -105,6 +105,22 @@
       ],
       "candidate_sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
       "candidate_path": "candidates/CH002_82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062.txt"
+    },
+    "3": {
+      "task_id": "780ba39e-26d2-4f2b-bc15-884dd67b23d8",
+      "chapter": 3,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+      "candidate_path": "candidates/CH003_9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5.txt"
     }
   },
   "completion": null,
@@ -215,6 +231,10 @@
     "2": {
       "path": "briefs/CH002_c084bbe533b668e3a1a6114410a2f9e812974718562280b77c10d5418d9c8c64.json",
       "sha256": "c084bbe533b668e3a1a6114410a2f9e812974718562280b77c10d5418d9c8c64"
+    },
+    "3": {
+      "path": "briefs/CH003_1da2701ff901b9218b6ed051ad35f1a2d7b4f0592c42abef2fb2e16d90a99d2e.json",
+      "sha256": "1da2701ff901b9218b6ed051ad35f1a2d7b4f0592c42abef2fb2e16d90a99d2e"
     }
   }
 }
