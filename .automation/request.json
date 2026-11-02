@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch003candidate20261102b4c91",
-  "base_sha": "263dc4eba2a3ce706540c6d5ad6dd36f5fe74e41",
+  "request_id": "xs5ch003releaseprep20261102b4c91",
+  "base_sha": "9de58149fc9628cfd16e1e2b28fb6b9579b1dcda",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -17,59 +17,25 @@
       "args": [
         "--root",
         "book",
-        "history-search",
-        "--query",
-        "发粮 兑付 赈棚 四十九号 坏车",
-        "--limit",
-        "5"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "brief-check",
-        "--file",
-        "drafts/CH003_brief.json"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "context",
-        "--profile",
-        "writer",
-        "--out",
-        "drafts/CH003_writer_context.txt"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "candidate",
-        "--chapter",
-        "3",
-        "--text",
-        "drafts/CH003_未审全文.txt"
-      ]
-    },
-    {
-      "script": "novel_state.py",
-      "args": [
-        "--root",
-        "book",
-        "context",
-        "--profile",
-        "reader",
+        "check-record",
         "--text",
         "drafts/CH003_未审全文.txt",
+        "--record",
+        "drafts/CH003_章后记录.json"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "release-request",
+        "--text",
+        "drafts/CH003_未审全文.txt",
+        "--record",
+        "drafts/CH003_章后记录.json",
         "--out",
-        "drafts/CH003_reader_context.txt"
+        "drafts/CH003_release_pending.json"
       ]
     }
   ]
