@@ -4,18 +4,18 @@
   "initialized": true,
   "book": {
     "id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
-    "title": "未命名小说",
+    "title": "《我把关门的戏院重新点亮》",
     "platform": "migu",
-    "selected_topic_id": null
+    "selected_topic_id": "T02"
   },
   "source": {
     "repository_url": "https://github.com/1464356758/XS5",
     "branch": "main",
-    "generated_at": "2026-11-03T06:30:00+00:00",
-    "state_revision": 0,
-    "workflow_revision": 3,
-    "state_sha256": "a3ae6c568ea0ca253f63cbf34005b764159c57157364dcc24c9cc33d5e2ce924",
-    "workflow_sha256": "a6cf96613407fbc2a661ffd144c789bd713bb8f692f2d9521a1d24f34bfa71d3",
+    "generated_at": "2026-11-03T10:10:12Z",
+    "state_revision": 3,
+    "workflow_revision": 5,
+    "state_sha256": "e700af08dfd92954c3c812ed06c2d088eddaffc5f340cb120bedb8a6b4245ad0",
+    "workflow_sha256": "cf6d70ec00fedfa3a7f4eae82193d9cc50b971313b7b76d599d007058f5077bc",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -38,12 +38,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_TOPIC",
-    "label": "等待选择题材",
+    "phase": "PLANNING",
+    "label": "长篇规划",
     "chapter": 1,
-    "detail": "已准备8个低敏感风险原创选题，等待作者选定。",
-    "next_action": "请选择T01—T08中的一个新题材；确定后建立全新设定和100章路线，不自动写正文。",
-    "updated_at": "2026-11-03T06:30:00+00:00"
+    "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。",
+    "next_action": "等待作者明确命令“开始第一章”；在此之前不生成候选正文、不冻结章节、不新建日更任务。",
+    "updated_at": "2026-11-03T10:10:12Z"
   },
   "chapters": [],
   "topics": [
@@ -237,6 +237,18 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个低敏感风险原创选题，等待作者选定。"
+    },
+    {
+      "at": "2026-11-03T10:10:12Z",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "作者正式选择T02《我把关门的戏院重新点亮》；暂不写正文。"
+    },
+    {
+      "at": "2026-11-03T10:10:12Z",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。"
     }
   ]
 }

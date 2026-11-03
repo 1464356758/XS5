@@ -1,10 +1,25 @@
 {
   "schema_version": 1,
-  "revision": 3,
+  "revision": 5,
   "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
-  "phase": "WAITING_TOPIC",
+  "phase": "PLANNING",
   "platform": "migu",
-  "selected_topic": null,
+  "selected_topic": {
+    "id": "T02",
+    "title": "《我把关门的戏院重新点亮》",
+    "genre": "女频现实｜文化经营｜职业群像",
+    "pitch": "小城的旧戏院只剩最后一场演出，离乡多年的舞美师要在一个月内凑齐能站上台的演员和观众。",
+    "reader_promise": "每阶段有真正完成的演出，台前幕后的人都获得机会也付出代价。",
+    "long_form_engine": "剧目开发、演员训练、巡演、舞美预算、线上传播和票房波折推动长篇。",
+    "stage_variation": "修舞台→重组剧团→外地巡演→合作危机→开设青年剧场。",
+    "ending_direction": "戏院不成神话，形成能靠演出养活部分人的小团队。",
+    "risk": "版权、合同与舞台专业细节要考据；切勿伪称真实剧团。",
+    "opening_hook": "首演前一天，唯一会唱主角的演员辞了。",
+    "source_ids": [
+      "S1"
+    ],
+    "author_request": "选择XS5新书选题T02《我把关门的戏院重新点亮》。请按新书流程建立全新设定与100章路线，暂不写正文。"
+  },
   "research_path": "research/platform_refresh_20261103.json",
   "topics_path": "research/topics_refresh_20261103.json",
   "chapter": 1,
@@ -32,9 +47,21 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "已准备8个低敏感风险原创选题，等待作者选定。"
+    },
+    {
+      "at": "2026-11-03T10:10:12Z",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "作者正式选择T02《我把关门的戏院重新点亮》；暂不写正文。"
+    },
+    {
+      "at": "2026-11-03T10:10:12Z",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。"
     }
   ],
-  "detail": "已准备8个低敏感风险原创选题，等待作者选定。",
-  "next_action": "请选择T01—T08中的一个新题材；确定后建立全新设定和100章路线，不自动写正文。",
-  "updated_at": "2026-11-03T06:30:00+00:00"
+  "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。",
+  "next_action": "等待作者明确命令“开始第一章”；在此之前不生成候选正文、不冻结章节、不新建日更任务。",
+  "updated_at": "2026-11-03T10:10:12Z"
 }

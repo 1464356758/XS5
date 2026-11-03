@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
-  "title": "未命名小说",
-  "revision": 0,
+  "title": "《我把关门的戏院重新点亮》",
+  "revision": 3,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -24,8 +24,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce.md",
+      "sha256": "294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce",
+      "reason": "XS5新书T02：世界观、人物事实与知情基线、经营财务和版权安全边界"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_70ba1290824c65ad4a5fa5b2540837de363c34ef36c7def8d42bcf9fff5fada5.md",
+      "sha256": "70ba1290824c65ad4a5fa5b2540837de363c34ef36c7def8d42bcf9fff5fada5",
+      "reason": "XS5新书T02：100章十阶段路线、承诺到期节点和CH001—CH005场景细案"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce.md",
+      "sha256": "294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce",
+      "reason": "XS5新书T02：世界观、人物事实与知情基线、经营财务和版权安全边界"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_70ba1290824c65ad4a5fa5b2540837de363c34ef36c7def8d42bcf9fff5fada5.md",
+      "sha256": "70ba1290824c65ad4a5fa5b2540837de363c34ef36c7def8d42bcf9fff5fada5",
+      "reason": "XS5新书T02：100章十阶段路线、承诺到期节点和CH001—CH005场景细案"
+    }
+  ],
   "tasks": {},
   "completion": null,
   "serialization": {
