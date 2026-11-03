@@ -1,7 +1,7 @@
 {
-  "schema_version": 1,
-  "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
-  "chapter": 1,
-  "draft_blob_sha": "75074ef6c0540fadda933d6a41dfae4dd42105c7",
-  "author_instruction": "开始第一章；按系统审核后正式冻结"
+    "schema_version": 1,
+    "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
+    "chapter": 1,
+    "draft_blob_sha": "75074ef6c0540fadda933d6a41dfae4dd42105c7",
+    "author_instruction": "开始第一章；按系统审核后正式冻结"
 }
