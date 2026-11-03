@@ -1,34 +1,35 @@
-name: XS5 one-time manual chapter freeze
+name: XS5 manual full chapter freeze
 on:
   push:
     paths:
-      - '.automation/manual_freeze_CH001.json'
+      - '.automation/manual_chapter_request.json'
 permissions:
   contents: write
 concurrency:
-  group: xs5-manual-chapter-freeze
+  group: xs5-manual-chapter-adoption
   cancel-in-progress: false
 jobs:
-  freeze-ch001:
+  freeze:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout authorized request
+      - name: Checkout original author-approved manuscript
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
-      - name: Execute original V4.3 chapter gate
-        run: python3 tools/manual_freeze_ch001.py
-      - name: Verify frozen workspace
+      - name: Run original V4.3 review and adoption gates
+        run: python3 tools/manual_chapter_freeze.py
+      - name: Validate real frozen index and serial invariants
         run: |
           python3 tools/online_state.py --project . validate-index
           python3 -m unittest discover -s tests -p 'test_serial_release.py' -q
-      - name: Commit chapter freeze
+      - name: Commit adopted full chapter and evidence
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          CHAPTER=$(python3 -c "import json; print('%03d' % json.load(open('.automation/manual_chapter_request.json'))['chapter'])")
           git add book/ online/index.json
-          git add -f drafts/CH001_写作任务书.json drafts/CH001_writer_context.txt drafts/CH001_reader_context.txt drafts/CH001_章后事实记录.json drafts/CH001_发布前实审报告.json
-          git diff --cached --quiet && { echo "No changes to adopt"; exit 1; }
-          git commit -m "freeze(xs5): adopt CH001 with V4.3 validated gate"
+          git add -f "drafts/CH${CHAPTER}_写作任务书.json" "drafts/CH${CHAPTER}_章后事实记录.json" "drafts/CH${CHAPTER}_发布前实审报告.json" "drafts/CH${CHAPTER}_writer_context.txt" "drafts/CH${CHAPTER}_reader_context.txt"
+          git diff --cached --quiet && { echo "No real chapter adoption to commit"; exit 1; }
+          git commit -m "freeze(xs5): adopt chapter CH${CHAPTER} via original V4.3"
           git push origin HEAD:main
