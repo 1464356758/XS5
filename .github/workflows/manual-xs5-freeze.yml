@@ -1,0 +1,33 @@
+name: XS5 one-time manual chapter freeze
+on:
+  push:
+    paths:
+      - '.automation/manual_freeze_CH001.json'
+permissions:
+  contents: write
+concurrency:
+  group: xs5-manual-chapter-freeze
+  cancel-in-progress: false
+jobs:
+  freeze-ch001:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout authorized request
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Execute original V4.3 chapter gate
+        run: python3 tools/manual_freeze_ch001.py
+      - name: Verify frozen workspace
+        run: |
+          python3 tools/online_state.py --project . validate-index
+          python3 -m unittest discover -s tests -p 'test_serial_release.py' -q
+      - name: Commit chapter freeze
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add book/ online/index.json drafts/CH001_写作任务书.json drafts/CH001_writer_context.txt drafts/CH001_reader_context.txt drafts/CH001_章后事实记录.json drafts/CH001_发布前实审报告.json
+          git diff --cached --quiet && { echo "No changes to adopt"; exit 1; }
+          git commit -m "freeze(xs5): adopt CH001 with V4.3 validated gate"
+          git push origin HEAD:main
