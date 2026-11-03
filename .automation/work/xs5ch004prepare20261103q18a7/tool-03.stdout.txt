@@ -1,0 +1,4 @@
+{
+  "path": "/tmp/novel-tool-batch-345fhf39/project/drafts/CH004_author_context.txt",
+  "characters": 34948
+}
