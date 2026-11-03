@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
   "title": "《我把关门的戏院重新点亮》",
-  "revision": 4,
+  "revision": 5,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -31,6 +31,16 @@
       "record_sha256": "0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121",
       "han_count": 9462,
       "adopted_at": "2026-11-03T14:37:03+00:00"
+    },
+    "2": {
+      "title": "七十一张票",
+      "stage": "S01",
+      "text_path": "chapters/CH002_2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c.txt",
+      "text_sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+      "record_path": "records/CH002_45f94ea45422667338d6028c6417cd36bc40eb6919ed653763e197811a0aaafc.json",
+      "record_sha256": "45f94ea45422667338d6028c6417cd36bc40eb6919ed653763e197811a0aaafc",
+      "han_count": 9389,
+      "adopted_at": "2026-11-03T20:52:34+00:00"
     }
   },
   "checkpoints": [],
@@ -79,6 +89,22 @@
       ],
       "candidate_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
       "candidate_path": "candidates/CH001_98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04.txt"
+    },
+    "2": {
+      "task_id": "ad859050-3101-4c20-b84e-8d25a7be9b3a",
+      "chapter": 2,
+      "mode": "write",
+      "phase": "adopted",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+      "candidate_path": "candidates/CH002_2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c.txt"
     }
   },
   "completion": null,
@@ -89,6 +115,10 @@
       "1": {
         "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
         "record_sha256": "0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121"
+      },
+      "2": {
+        "text_sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+        "record_sha256": "45f94ea45422667338d6028c6417cd36bc40eb6919ed653763e197811a0aaafc"
       }
     },
     "published": {},
@@ -96,6 +126,11 @@
       "1": {
         "path": "releases/CH001_29a45d5752147368829e2fbb26b8265b86751e9a9eca16637390a253616e36a3.json",
         "sha256": "29a45d5752147368829e2fbb26b8265b86751e9a9eca16637390a253616e36a3",
+        "used": true
+      },
+      "2": {
+        "path": "releases/CH002_9b4fa79fd84b6c7224878bbcac7d63859e8abd3984d8f9e6311704ad03f6eb97.json",
+        "sha256": "9b4fa79fd84b6c7224878bbcac7d63859e8abd3984d8f9e6311704ad03f6eb97",
         "used": true
       }
     },
@@ -113,11 +148,23 @@
               "quote": "请勿按原场次到场。"
             },
             "chapter": 1
+          },
+          {
+            "id": "P01-original-show",
+            "action": "complete",
+            "deadline_chapter": 2,
+            "reason": "原约定4月19日19:30旧戏确实无演出并已经公告；退款不在本线假称完成，仍由P02跟进。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+              "quote": "七点半整，青灯没有响起开场铃。"
+            },
+            "chapter": 2
           }
         ],
         "deadline_chapter": 2,
-        "status": "open",
-        "last_reviewed_chapter": 1
+        "status": "closed",
+        "last_reviewed_chapter": 2
       },
       "P02-ticket-refunds": {
         "history": [
@@ -132,11 +179,24 @@
               "quote": "明天，先把票退。"
             },
             "chapter": 1
+          },
+          {
+            "id": "P02-ticket-refunds",
+            "action": "miss",
+            "deadline_chapter": 4,
+            "cost": "此前计划CH002清理原71张旧票，但渠道与残缺票／失联客观阻碍，全额未结49张3430元与陆铮路费主张实际增加资金和观众信任压力。继续执行到CH004而非关闭。",
+            "reason": "首批真实退掉22张1500元，49张3430元未结；原CH002到期未全部兑现，明确失期与延期赔付压力。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+              "quote": "已完成二十二张，一千五百元；尚未完成四十九张，三千四百三十元。"
+            },
+            "chapter": 2
           }
         ],
-        "deadline_chapter": 2,
+        "deadline_chapter": 4,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P03-new-short-show": {
         "history": [
@@ -155,7 +215,7 @@
         ],
         "deadline_chapter": 10,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P04-Jiang-exit": {
         "history": [
@@ -174,7 +234,7 @@
         ],
         "deadline_chapter": 7,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
       },
       "P05-content-rights": {
         "history": [
@@ -193,7 +253,64 @@
         ],
         "deadline_chapter": 4,
         "status": "open",
-        "last_reviewed_chapter": 1
+        "last_reviewed_chapter": 2
+      },
+      "P06-transport-claim": {
+        "history": [
+          {
+            "id": "P06-transport-claim",
+            "action": "set",
+            "deadline_chapter": 4,
+            "reason": "陆铮额外交通费主张已登记，未决定由谁赔、赔多少，须给他可核明确答复。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+              "quote": "我从蒲湾来。"
+            },
+            "chapter": 2
+          }
+        ],
+        "deadline_chapter": 4,
+        "status": "open",
+        "last_reviewed_chapter": 2
+      },
+      "P07-damaged-ticket": {
+        "history": [
+          {
+            "id": "P07-damaged-ticket",
+            "action": "set",
+            "deadline_chapter": 4,
+            "reason": "少年半张泡水三十元票不能核真伪与是否重复退费，待票据与购票人核验。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+              "quote": "尚未核销，尚未退款"
+            },
+            "chapter": 2
+          }
+        ],
+        "deadline_chapter": 4,
+        "status": "open",
+        "last_reviewed_chapter": 2
+      },
+      "P08-musician-payment": {
+        "history": [
+          {
+            "id": "P08-musician-payment",
+            "action": "set",
+            "deadline_chapter": 5,
+            "reason": "伴奏老师魏某至少两次排练劳动已核实，但实际支付未发生，仍须核第三次及支付时间。",
+            "evidence": {
+              "chapter": 2,
+              "sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+              "quote": "已核工作、待核支付"
+            },
+            "chapter": 2
+          }
+        ],
+        "deadline_chapter": 5,
+        "status": "open",
+        "last_reviewed_chapter": 2
       }
     },
     "incidents": {}
@@ -202,6 +319,10 @@
     "1": {
       "path": "briefs/CH001_bcefaff5b21c6c63a9c26fad3f7296c6c71e674be5211fcbde309e4b0c1c97cd.json",
       "sha256": "bcefaff5b21c6c63a9c26fad3f7296c6c71e674be5211fcbde309e4b0c1c97cd"
+    },
+    "2": {
+      "path": "briefs/CH002_351ddc521ea7a23ab0b74ac37f7d4053e0f7687fe74715e1165cb3b658c03500.json",
+      "sha256": "351ddc521ea7a23ab0b74ac37f7d4053e0f7687fe74715e1165cb3b658c03500"
     }
   }
 }

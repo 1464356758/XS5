@@ -1,0 +1,211 @@
+{
+  "chapter": 2,
+  "title": "七十一张票",
+  "stage": "S01",
+  "story_time_end": 2,
+  "complete": true,
+  "summary": "2026年4月19日，青灯戏院原告别场不能如期举行。陆铮从蒲湾赶来，对两张160元电子票提交退款申请尚待渠道处理，另提出车旅损失待闻秋棠核定。田也现场核原票给罗姐等退8张纸票440元，并核两类线上共14张1060元原路退款成功；22张1500元正式完成，尚未结清49张3430元，其中10张740元渠道处理中、39张尚未有效处理，时间和票号均保留。乔奶奶送回旧‘青灯’玻璃杯，仍要求退旧票，不将旧票押作新戏。夏栩制作不含观众隐私及未授权旧唱段的退款说明；魏老师部分旧排练劳动获核实但尚未支付，残缺三十元纸票等待购票人核验。原定19:30无戏，仍有未收到通知的老夫妻到场。许照见到钱真的回到观众手中，也认识到自己不能代经营方决定全部赔偿；夜里帮助核账，与陈小满约定下次试一个适合其能力的原创短段而非代姜未央。剧院不冒称已复开。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "明天，先把票退。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "七十一张，已收票款四千九百三十元。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "一个月。"
+      }
+    ],
+    "conclusion": "已实际回读CH001冻结全文和CH002候选全文。时间从4月18日递辞演、当晚公告到4月19日真实退票顺序一致；71票总额、22已结/49未结计算无误；线上‘受理’与‘成功’严格分开；原场没有擅自换歌或进行未授权播放，姜未央未被强迫返场。魏老师旧劳务不能因为观众退款就视为免付。反重复方面上章提出需要退票，本章行动真实赔付并让远道游客和残损票产生后果；票务解释篇幅仍偏重，CH003必须回到舞台试排、人物身体动作与可实现的创作，不重复办票业务。读者审读仍为same_context_approximation，不是外部人工或独立模型。"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "ticket:71:4930",
+      "value": "截至4月19日夜原71张4930元中，22张1500元已成功退还，49张3430元仍未结清；本条更新前一章71票完全未结状态",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "已完成二十二张，一千五百元；尚未完成四十九张，三千四百三十元。"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:paper:complete",
+      "value": "现场纸票共8张已付现退款440元，其中5张70元、3张30元；票根按规则作废并取得收款确认",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "五张七十元，三张三十元，一共四百四十元。"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:online:complete",
+      "value": "线上14张成功原路退款1060元，12张80元与2张50元，尚有部分个人账户未另独立核实",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "十二张八十元、两张五十元已经显示渠道退款成功，一共一千零六十元。"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:online:processing",
+      "value": "线上10张退款申请仍渠道处理中，8张80元和2张50元，共740元未算已退",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "八张八十元和两张五十元，十张，一共七百四十元"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:remaining:unhandled",
+      "value": "另39张尚无成功退款或有权改签，包含线上29张纸票10张，有失联、待核或想等待的观众",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "还有三十九张"
+    },
+    {
+      "kind": "state",
+      "key": "money:working-balance",
+      "value": "原账面可动32400元扣除已确认1500元退款，形成仅供核对的30900元工作底数，平台结算和其他流动款仍待银行核对，不能记成正式月末结算",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "三万零九百元"
+    },
+    {
+      "kind": "state",
+      "key": "LuZheng:transport-claim",
+      "value": "陆铮蒲湾来回交通实际损失要求已登记，是否由工作室承担未知；他的两张电子票160元仍退款处理中",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "他在蒲湾回程车站打电话来"
+    },
+    {
+      "kind": "state",
+      "key": "Qiao:original-ticket",
+      "value": "乔奶奶希望将原《长街月》票退回，不同意自动用旧票换未来新戏；其线上申请受理未当场证实到账",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "它是它，下一场是下一场。"
+    },
+    {
+      "kind": "state",
+      "key": "Wei:labour-due",
+      "value": "魏老师上周排练工时单有两次当面核实、另一次待补查，已核部分仍须确认实际支付时间",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "已核工作、待核支付"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:damaged-paper",
+      "value": "少年受潮只剩半张三十元优惠纸票，票号残缺，不能确认尚未重复退，登记待核而未付",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "尚未核销，尚未退款"
+    },
+    {
+      "kind": "fact",
+      "key": "show:Apr19:cancelled",
+      "value": "4月19日19:30《长街月》原定演出确未举行，现场未假装替代演出，仍有老年购票者赶来",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "七点半整，青灯没有响起开场铃。"
+    },
+    {
+      "kind": "state",
+      "key": "stage:future-role",
+      "value": "许照邀请陈小满次日试站空台，寻找其能力范围内的新段落，不是宣布她获得主角",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "明天我想让小满来看看这个位置。不是叫她接未央的戏。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "audience:notice-incomplete",
+      "holder": "许照",
+      "value": "许照得知部分老年观众未收到或未理解昨夜线上公告，仍按原定时间到戏院，须改善通知触达而非只发平台消息",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "有些老人只能靠家人转告"
+    },
+    {
+      "kind": "knowledge",
+      "key": "Jiang:exit-respected",
+      "holder": "闻秋棠",
+      "value": "闻秋棠本想联系姜未央求唱半小时，但没有联系，不得把这当作姜本人改变退出决定",
+      "valid_from": 2,
+      "valid_until": null,
+      "quote": "我今天本来想去找未央。"
+    }
+  ],
+  "progression": {
+    "goal": "4月19日实际处理原告别场71张票的履约与退款，允许观众拿回钱或明确选择，避免旧戏假装还演。",
+    "obstacle": "远道陆铮主张交通费，渠道退款到账有时差，纸票残损与纸质票核销风险，老年观众未及时看到公告，魏老师仍有劳动款。",
+    "method": "田也按来源确认票号与退款路径，现场现金签收作废，线上区分受理与成功，许照帮助现场接待并倒查票号，夏栩只发真实可查的退款信息。",
+    "choice": "许照不把本人零钱冒充工作室退款、不替经营者许诺车费和工资、不靠未授权旧录音抚慰误来观众；将旧票和未来新剧分开。",
+    "result": "8张纸票440元当场支付，14张线上1060元已原路成功，共22张1500元退款完成；19:30原剧没有演出；陈小满仅获新段落试站的机会。",
+    "consequence": "仍有49张3430元履约责任、陆铮两张票及交通费未结、损票待核、魏老师劳动未付、老夫妻空跑；可用账面减少且工作室声誉有损。",
+    "next_options": "CH003排出不用强替姜未央的舞台短段；继续处理未结49票并明确给交通损失答复。CH004核准编剧与配乐权利。",
+    "scene_function": "陆铮车票堵门钩→罗姐现金实领→乔奶奶归杯退票→线上真实原路退款→魏老师工钱／男孩损票→误来老夫妻空场→核对退款金额→陈小满自由试段。"
+  },
+  "thread_events": [
+    {
+      "id": "P01-original-show",
+      "action": "close",
+      "description": "4月19日19:30原《长街月》正式未演，旧节目履约变更已经公开且未将替演冒充原场；退款仍由独立P02承担。",
+      "quote": "七点半整，青灯没有响起开场铃。"
+    },
+    {
+      "id": "P02-ticket-refunds",
+      "action": "partial",
+      "description": "原71票首批22张已退1500元，49张3430元未结，原计划CH002全部处理未实现，必须留下明确未结与后续期限。",
+      "quote": "已完成二十二张，一千五百元；尚未完成四十九张，三千四百三十元。"
+    },
+    {
+      "id": "P03-new-short-show",
+      "action": "develop",
+      "description": "许照邀陈小满仅试合适能力的新段落，原创短场尚无剧本、许可、时间与付费观众。",
+      "quote": "明天我想让小满来看看这个位置。不是叫她接未央的戏。"
+    },
+    {
+      "id": "P04-Jiang-exit",
+      "action": "develop",
+      "description": "闻秋棠克制求姜未央回场的念头，并未联络强迫；退出的合同责任仍需后续交代。",
+      "quote": "我今天本来想去找未央。"
+    },
+    {
+      "id": "P05-content-rights",
+      "action": "develop",
+      "description": "因未获原唱段授权，团队没有给误来观众播放旧剧录音，原创作品权利仍未解决。",
+      "quote": "因为那不属于他们买的演出，也不该用未取得许可的旧唱段安慰人。"
+    },
+    {
+      "id": "P06-transport-claim",
+      "action": "plant",
+      "description": "陆铮两张票渠道处理中，另要求记录蒲湾往返交通费；闻秋棠需核损失并实际答复，不能虚诺赔付。",
+      "quote": "我从蒲湾来。"
+    },
+    {
+      "id": "P07-damaged-ticket",
+      "action": "plant",
+      "description": "少年持被水损坏的半张三十元纸票，无法核实是否已退；须由有权购票人与记录双核后解决，不可写已付款。",
+      "quote": "尚未核销，尚未退款"
+    },
+    {
+      "id": "P08-musician-payment",
+      "action": "plant",
+      "description": "魏老师三次排练中两次工作内容已核，另一次待查，实际报酬仍未到账，须查账约定实际付款。",
+      "quote": "已核工作、待核支付"
+    }
+  ],
+  "base_revision": 4,
+  "canon_sha256": "294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce",
+  "text_sha256": "2d910a41812947a267544512b9ef1e18479bd409a1dda54fab4c0ca5b40d998c",
+  "measured_han": 9389
+}
