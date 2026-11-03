@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "platform": "migu",
+  "checked_at": "2026-11-03T06:30:00+00:00",
+  "coverage_status": "partial",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "咪咕文学官方作者入口",
+      "url": "https://www.cmread.com/wenxuenew/",
+      "accessed_at": "2026-11-03T06:30:00+00:00"
+    },
+    {
+      "id": "S2",
+      "title": "咪咕2026年10月用户协议",
+      "url": "https://passport.migu.cn/portal/protocol?hisver=20261012&sourceid=204019",
+      "accessed_at": "2026-11-03T06:30:00+00:00"
+    }
+  ],
+  "rules": [
+    {
+      "topic": "作者服务入口",
+      "status": "verified",
+      "source_id": "S1",
+      "detail": "提供作者投稿指南和作者专区，展示内容不代表当前畅销名次。"
+    },
+    {
+      "topic": "原创与内容合规要求",
+      "status": "verified",
+      "source_id": "S2",
+      "detail": "内容需符合版权与内容审核规范，不能仅靠替换词语规避要求。"
+    },
+    {
+      "topic": "个人作者AI写作政策",
+      "status": "unknown",
+      "detail": "未查到当前完整明确的个人作者条款，投稿前向编辑核对。"
+    }
+  ],
+  "rank_samples": [],
+  "gaps": [
+    "实时新书榜名次、分类销量无法独立核验。",
+    "个人作者签约、AI辅助、独家首发和具体敏感审核需再查。"
+  ],
+  "recommendation": "选择低敏感度女频生活、经营、手艺和轻悬疑，强开篇冲突与长期成长，不保证审核通过。"
+}

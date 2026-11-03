@@ -1,6 +1,0 @@
-{
-  "path": "briefs/CH002_c084bbe533b668e3a1a6114410a2f9e812974718562280b77c10d5418d9c8c64.json",
-  "sha256": "c084bbe533b668e3a1a6114410a2f9e812974718562280b77c10d5418d9c8c64",
-  "valid_mechanically": true,
-  "note": "不改变候选、修订次数或冻结事实；不证明任务书已完整提取语义约束。"
-}
