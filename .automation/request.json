@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "request_id": "xs5ch004prepare20261103q18a7",
-  "base_sha": "26cef07f0cdc3ff7f1a5c2935d83ec22e392787d",
+  "request_id": "xs5ch004candidate20261103q18a7",
+  "base_sha": "2e791df662996e39bf54cdd528d9f8379f49dd60",
   "book_id": "2b285e23-d842-4102-9f56-c55a1d6357b0",
   "controller": {
     "kind": "automation",
@@ -19,7 +19,7 @@
         "book",
         "history-search",
         "--query",
-        "北岗九分 旧尺 划痕 接收 初验 窗口",
+        "九分 旧尺 交接 站所 摹本 木匣",
         "--limit",
         "5"
       ]
@@ -29,8 +29,8 @@
       "args": [
         "--root",
         "book",
-        "brief-request",
-        "--out",
+        "brief-check",
+        "--file",
         "drafts/CH004_brief.json"
       ]
     },
@@ -41,11 +41,35 @@
         "book",
         "context",
         "--profile",
-        "author",
-        "--query",
-        "北岗旧铜尺复校 原簿 交接证人 刻线 县署令",
+        "writer",
         "--out",
-        "drafts/CH004_author_context.txt"
+        "drafts/CH004_writer_context.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "candidate",
+        "--chapter",
+        "4",
+        "--text",
+        "drafts/CH004_未审全文.txt"
+      ]
+    },
+    {
+      "script": "novel_state.py",
+      "args": [
+        "--root",
+        "book",
+        "context",
+        "--profile",
+        "reader",
+        "--text",
+        "drafts/CH004_未审全文.txt",
+        "--out",
+        "drafts/CH004_reader_context.txt"
       ]
     }
   ]
