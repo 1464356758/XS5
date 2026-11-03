@@ -1,0 +1,184 @@
+{
+  "chapter": 4,
+  "title": "铜尺借不走",
+  "stage": "S01",
+  "base_revision": 6,
+  "canon_sha256": "3cfe8dc11abadd354e54f51a2505f46efcd3625f4bad1b8aa9f68da343b225c9",
+  "text_sha256": "021f20235a227a4b4c3905eb5997897958754c142d4960fd15e7b44136abf7f0",
+  "complete": true,
+  "story_time_end": 5190,
+  "summary": "六月初十，器房韩维与栾直上北岗取旧铜尺复校。程桑请石桥民间铜匠黄砚娘目比县尺，留两纸拓样及一条带禁用标记的废铜弱旁证；旧尺九分侧伤与尺根旧缺损获现场记述，仍无正式量数判定。韩维将旧尺封匣带走，未派替尺，原始雨簿仍锁柜。午后北岗棚前零星滴雨，赶驴老农仅证见滴，程桑不虚填刻数。西坡青年受传闻挑空桶上山无水可取。宋榆晚间奉差到山，不能为取器过程作证，翌日送件未落实；按旬副页备妥仍待合法交接。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 1,
+        "sha256": "2d5552763abb28d8f475b594cbabb767881378836b09aec56b4c60c3fbb433f6",
+        "quote": "县署尚未核定降水来源及全县影响。"
+      },
+      {
+        "chapter": 2,
+        "sha256": "82b2c7b7dc17efce33cc904ae43803814ce4cf48ae25dcb640782b18d7145062",
+        "quote": "确认从零至九分的主刻间距没有明显错位。"
+      },
+      {
+        "chapter": 3,
+        "sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+        "quote": "县署决定将北岗原用铜尺取回县内比校"
+      },
+      {
+        "chapter": 3,
+        "sha256": "9b7a5022be4a35117e9e7b31362e92b6ccf93cc0bb31959d9bdcd59758ed39f5",
+        "quote": "南棚一共核出二十六户当日确有旧额、并在场领到了粮。"
+      }
+    ],
+    "conclusion": "已阅读前三章冻结正文和本章全文：初七九分不由六月初十散滴追认；旧尺仅现场外观目比且在依法收器后站所失去正式量数能力；原簿未出柜、县报未撤，宋榆非现场见证。前章26户实领和四升实损均不改写。叙事与前三章不同在于实物移交、弱旁证与空尺失测的实际代价；存在程序对话偏密的轻微节奏问题，后章转副页流转与有形风险。读者审读同上下文近似。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "ruler:transfer",
+      "value": "韩维依法封匣带走北岗旧尺，县内实到与正式校准未确认",
+      "holder": "",
+      "valid_from": 4790,
+      "valid_until": null,
+      "quote": "旧尺送去正式比校，报错与否还没结果。"
+    },
+    {
+      "kind": "fact",
+      "key": "ruler:oldmark",
+      "value": "九分主线旁旧斜痕与尺根旧缺损均在场见过，不等于量雨真值获确认",
+      "holder": "",
+      "valid_from": 4550,
+      "valid_until": null,
+      "quote": "九分旁那道旧划痕，细而斜，是磨伤。"
+    },
+    {
+      "kind": "state",
+      "key": "ruler:unofficial-copy",
+      "value": "两张清晰不同的拓纸和带‘私样不可量雨’刻记的废铜，仅为外观旁证，不能充官尺",
+      "holder": "",
+      "valid_from": 4690,
+      "valid_until": null,
+      "quote": "私样不可量雨"
+    },
+    {
+      "kind": "state",
+      "key": "ruler:rubbing-loss",
+      "value": "午前风吹拓纸落坡，拾回后破角，保留破损而非重新隐去",
+      "holder": "",
+      "valid_from": 4710,
+      "valid_until": null,
+      "quote": "纸角破，刻线未补"
+    },
+    {
+      "kind": "state",
+      "key": "ruler:no-replacement",
+      "value": "县署未提供合规替尺，北岗站只能记录所见而不能正式按刻数测雨",
+      "holder": "",
+      "valid_from": 4820,
+      "valid_until": null,
+      "quote": "原尺收去，代尺未付，站所读数待校"
+    },
+    {
+      "kind": "state",
+      "key": "north:raw-ledger",
+      "value": "原簿仍锁在北岗柜中，不属于当日取尺权限",
+      "holder": "",
+      "valid_from": 4840,
+      "valid_until": null,
+      "quote": "原始雨簿还锁在柜里"
+    },
+    {
+      "kind": "fact",
+      "key": "north:june10-drizzle",
+      "value": "六月初十北岗棚前短时散滴，筒里留薄水，因缺合法尺未量刻数",
+      "holder": "",
+      "valid_from": 4960,
+      "valid_until": null,
+      "quote": "散滴短时，未具合法量尺，水量未测"
+    },
+    {
+      "kind": "knowledge",
+      "key": "farmer:limited",
+      "value": "石桥赶驴老农只见六月初十零星滴雨，不替初七九分或本日刻数作证",
+      "holder": "石桥赶驴老农",
+      "valid_from": 4990,
+      "valid_until": null,
+      "quote": "你别叫我替它说九分。"
+    },
+    {
+      "kind": "state",
+      "key": "north:rain-scope",
+      "value": "零星雨观测限于北岗棚前，没有证据推广至石岭与南洼",
+      "holder": "",
+      "valid_from": 5020,
+      "valid_until": null,
+      "quote": "北岗棚前"
+    },
+    {
+      "kind": "state",
+      "key": "rumor:empty-buckets",
+      "value": "西坡青年听传闻挑空桶上山，青瓮溪未出现能供挑取的新水源",
+      "holder": "",
+      "valid_from": 5070,
+      "valid_until": null,
+      "quote": "一个挑着两只竹桶的青年从山道爬上来"
+    },
+    {
+      "kind": "knowledge",
+      "key": "songyu:late-arrival",
+      "value": "宋榆到山时尺已被带走，不知出站过程与途中状态",
+      "holder": "宋榆",
+      "valid_from": 5100,
+      "valid_until": null,
+      "quote": "县署拿走的时候我不在场，不能替谁证明它在路上有没有碰坏。"
+    },
+    {
+      "kind": "state",
+      "key": "songyu:delivery-pending",
+      "value": "宋榆愿次日照驿路交停尺情况，未确认县署已收",
+      "holder": "",
+      "valid_from": 5110,
+      "valid_until": null,
+      "quote": "我明日照差路走，若县署收件，我替你交到明面上。"
+    },
+    {
+      "kind": "state",
+      "key": "north:copy-pending",
+      "value": "六月初十按旬副页备妥，分列原测、初验、缺尺散滴未测，尚未送县署",
+      "holder": "",
+      "valid_from": 5180,
+      "valid_until": null,
+      "quote": "她把副页夹进待送的硬板中"
+    }
+  ],
+  "progression": {
+    "goal": "旧尺依法转县器房复校而留可追溯的原状旁证、保住原簿。",
+    "obstacle": "九分侧旧伤与根部缺损、取尺急令、无替尺、民间比样弱证明力及雨情传言。",
+    "method": "请铜匠目比并留清楚与糊线拓纸、带禁用痕的废铜片；韩维当面封匣登记，栾直见证；无尺时记录散滴不报假数。",
+    "choice": "主动接受县署带走旧尺，不非法阻校；不把私人拓样冒充官尺，不虚报当日无尺雨量。",
+    "result": "旧尺封匣收走、原簿留站、未派替尺，北岗散滴未测；副页预备而尚未提交。",
+    "consequence": "站所暂时失去定量能力、纸样风损、匠人误工、青年因雨谣上山空返，正式器房实收未知。",
+    "next_options": "CH005核副页真实流转、保留失页实证；CH010正式完成原簿保全；CH020继续急粮兑现。",
+    "scene_function": "勒尺起钩、匠人目比和弱副证、合法取尺与损纸、散滴无法量、青年空桶、宋榆晚间与副页风险。"
+  },
+  "thread_events": [
+    {
+      "id": "P-RAIN-RAW",
+      "action": "develop",
+      "description": "旧尺有外观弱证并被取去复校，但器房复校与原簿正式封存未完成，保持CH010。",
+      "quote": "旧尺送去正式比校，报错与否还没结果。"
+    },
+    {
+      "id": "P-GRAIN-WINDOW",
+      "action": "develop",
+      "description": "宋阿翁第三日只领当日既配两升，前两日及三日急粮未兑现，保持CH020。",
+      "quote": "你祖父第三天才领到两升粮"
+    }
+  ],
+  "stage_closing": false,
+  "measured_han": 9024
+}
