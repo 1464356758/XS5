@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
   "title": "《我把关门的戏院重新点亮》",
-  "revision": 3,
+  "revision": 4,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -21,7 +21,18 @@
     "opening_impact_max_han": 3000,
     "narrative_review_required": true
   },
-  "chapters": {},
+  "chapters": {
+    "1": {
+      "title": "她说今晚不唱了",
+      "stage": "S01",
+      "text_path": "chapters/CH001_98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04.txt",
+      "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+      "record_path": "records/CH001_0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121.json",
+      "record_sha256": "0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121",
+      "han_count": 9462,
+      "adopted_at": "2026-11-03T14:37:03+00:00"
+    }
+  },
   "checkpoints": [],
   "needs_revalidation": [],
   "inputs": {
@@ -52,15 +63,145 @@
       "reason": "XS5新书T02：100章十阶段路线、承诺到期节点和CH001—CH005场景细案"
     }
   ],
-  "tasks": {},
+  "tasks": {
+    "1": {
+      "task_id": "a061d8c4-d1b8-4994-9b96-bbd24d68fe3b",
+      "chapter": 1,
+      "mode": "write",
+      "phase": "adopted",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+      "candidate_path": "candidates/CH001_98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04.txt"
+    }
+  },
   "completion": null,
   "serialization": {
     "schema_version": 1,
     "enabled": true,
-    "frozen": {},
+    "frozen": {
+      "1": {
+        "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "record_sha256": "0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121"
+      }
+    },
     "published": {},
-    "gates": {},
-    "promises": {},
+    "gates": {
+      "1": {
+        "path": "releases/CH001_29a45d5752147368829e2fbb26b8265b86751e9a9eca16637390a253616e36a3.json",
+        "sha256": "29a45d5752147368829e2fbb26b8265b86751e9a9eca16637390a253616e36a3",
+        "used": true
+      }
+    },
+    "promises": {
+      "P01-original-show": {
+        "history": [
+          {
+            "id": "P01-original-show",
+            "action": "set",
+            "deadline_chapter": 2,
+            "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+              "quote": "请勿按原场次到场。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 2,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P02-ticket-refunds": {
+        "history": [
+          {
+            "id": "P02-ticket-refunds",
+            "action": "set",
+            "deadline_chapter": 2,
+            "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+              "quote": "明天，先把票退。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 2,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P03-new-short-show": {
+        "history": [
+          {
+            "id": "P03-new-short-show",
+            "action": "set",
+            "deadline_chapter": 10,
+            "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+              "quote": "一个月。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 10,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P04-Jiang-exit": {
+        "history": [
+          {
+            "id": "P04-Jiang-exit",
+            "action": "set",
+            "deadline_chapter": 7,
+            "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+              "quote": "合同该怎么算，您让田也按原来约定核。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 7,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      },
+      "P05-content-rights": {
+        "history": [
+          {
+            "id": "P05-content-rights",
+            "action": "set",
+            "deadline_chapter": 4,
+            "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+            "evidence": {
+              "chapter": 1,
+              "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+              "quote": "内部练习不等于明晚能拿来放给买票的人。"
+            },
+            "chapter": 1
+          }
+        ],
+        "deadline_chapter": 4,
+        "status": "open",
+        "last_reviewed_chapter": 1
+      }
+    },
     "incidents": {}
+  },
+  "writing_briefs": {
+    "1": {
+      "path": "briefs/CH001_bcefaff5b21c6c63a9c26fad3f7296c6c71e674be5211fcbde309e4b0c1c97cd.json",
+      "sha256": "bcefaff5b21c6c63a9c26fad3f7296c6c71e674be5211fcbde309e4b0c1c97cd"
+    }
   }
 }

@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
+  "chapter": 1,
+  "base_revision": 3,
+  "task_id": "a061d8c4-d1b8-4994-9b96-bbd24d68fe3b",
+  "repairs": 0,
+  "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+  "record_sha256": "0eb9a6fcf95afd3a3f5d8e4c190fd4ea69d42a19120f385987a81a95c8113121",
+  "canon_sha256": "294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce",
+  "roadmap_sha256": "70ba1290824c65ad4a5fa5b2540837de363c34ef36c7def8d42bcf9fff5fada5",
+  "narrative_review_version": 1,
+  "writing_brief_sha256": "bcefaff5b21c6c63a9c26fad3f7296c6c71e674be5211fcbde309e4b0c1c97cd",
+  "decision": "release",
+  "read_full_text": true,
+  "blocking_issues": [],
+  "read_coverage": {
+    "1": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04"
+  },
+  "reader_reason_to_continue": "71张票与4930元尚未实际退改，第二章须从真实观众和渠道回款推进，不停在通知。",
+  "consequence": "原节目正式不可如期，姜未央离开，舞美停用，观众面临退改；一个月试演尚无本子和保证。",
+  "ending_runway": "100章长篇刚开始，第一卷第十章必须有一场真正完成的合法付费原创短戏。",
+  "checks": {
+    "timeline": {
+      "decision": "pass",
+      "conclusion": "事件按4月18日下午至当晚顺序推进；4月19日未被虚写为成功演出",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "明天那场，我不唱了。"
+        }
+      ]
+    },
+    "knowledge": {
+      "decision": "pass",
+      "conclusion": "个人退出原因未知，角色不凭空掌握姜未央私人细节",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "我不能替她说原因。"
+        }
+      ]
+    },
+    "props_resources": {
+      "decision": "pass",
+      "conclusion": "4930元包含在32400元现金，不重复计算；旧款未清，月景停用",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "账面可动三万二千四百。这四千九百三十包含在里面"
+        }
+      ]
+    },
+    "causality": {
+      "decision": "pass",
+      "conclusion": "辞演令试唱失败、停演、停售、告知和有限新戏试验依次发生",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "我没有学过这个。"
+        }
+      ]
+    },
+    "power_rules": {
+      "decision": "pass",
+      "conclusion": "许照不冒充有权经营者，旧录音与舞美未核的使用受到限制",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "内部练习不等于明晚能拿来放给买票的人。"
+        }
+      ]
+    },
+    "promises": {
+      "decision": "pass",
+      "conclusion": "原场停演已兑现，票款退改留第2章实做，试演留第10章",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "明天，先把票退。"
+        }
+      ]
+    },
+    "anti_repeat": {
+      "decision": "pass",
+      "conclusion": "本书无前文冻结章；本章有试唱、搬景和真人到访，并非只讨论合同",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "月景停用待检查。勿擅自吊挂。"
+        }
+      ]
+    },
+    "character_agency": {
+      "decision": "pass",
+      "conclusion": "许照自己停排并选择不逼唱；闻秋棠确认条件而非无条件给钱",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "我先把明晚的走位停下来。"
+        }
+      ]
+    }
+  },
+  "comparison": [],
+  "future_window": [
+    {
+      "chapter": 2,
+      "goal": "逐票处理原71张售票",
+      "change": "至少一部分真实退票或获得本人改签同意",
+      "ending_question": "仍未联系者与远道观众如何处理"
+    },
+    {
+      "chapter": 3,
+      "goal": "验证不需要旧头牌的舞台形式",
+      "change": "舍弃强行顶角方案并启动原创小戏",
+      "ending_question": "旧本子授权与音乐如何取得"
+    },
+    {
+      "chapter": 4,
+      "goal": "区分旧戏与新戏的使用权",
+      "change": "取得有限新剧本和音乐授权",
+      "ending_question": "是否能排出可交给观众的短场"
+    }
+  ],
+  "promise_reviews": [
+    {
+      "id": "P01-original-show",
+      "action": "set",
+      "deadline_chapter": 2,
+      "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "请勿按原场次到场。"
+      }
+    },
+    {
+      "id": "P02-ticket-refunds",
+      "action": "set",
+      "deadline_chapter": 2,
+      "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "明天，先把票退。"
+      }
+    },
+    {
+      "id": "P03-new-short-show",
+      "action": "set",
+      "deadline_chapter": 10,
+      "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "一个月。"
+      }
+    },
+    {
+      "id": "P04-Jiang-exit",
+      "action": "set",
+      "deadline_chapter": 7,
+      "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "合同该怎么算，您让田也按原来约定核。"
+      }
+    },
+    {
+      "id": "P05-content-rights",
+      "action": "set",
+      "deadline_chapter": 4,
+      "reason": "本章已种下义务但实际行动未全部完成；按前五章和首卷路线设到期限制。",
+      "evidence": {
+        "chapter": 1,
+        "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+        "quote": "内部练习不等于明晚能拿来放给买票的人。"
+      }
+    }
+  ],
+  "incident_actions": [],
+  "opening": {
+    "first_hook": {
+      "quote": "明天那场，我不唱了。",
+      "why": "开场立刻宣告明晚主角辞演"
+    },
+    "core_promise": {
+      "quote": "《长街月》原安排暂停。",
+      "why": "前期直接暂停不能如期排演的戏院场景"
+    },
+    "protagonist_impact": {
+      "quote": "我先把明晚的走位停下来。",
+      "why": "女主立即选择停排并承受与经营者的冲突"
+    }
+  },
+  "narrative_review": {
+    "schema_version": 1,
+    "actual_scenes": [
+      {
+        "event": "辞演当面告知",
+        "choice": "姜未央要求退出",
+        "change": "原主演明晚不演",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "明天那场，我不唱了。"
+          }
+        ]
+      },
+      {
+        "event": "新人试唱失败",
+        "choice": "许照停止逼新人替演",
+        "change": "原剧无法蒙混",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "我没有学过这个。"
+          }
+        ]
+      },
+      {
+        "event": "师生冲突",
+        "choice": "许照坚持观众有权知情",
+        "change": "经营者必须面对责任",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "不能用另一件东西假装他们买的就是这件。"
+          }
+        ]
+      },
+      {
+        "event": "田也核对预售",
+        "choice": "团队停售并区分预售与可用资金",
+        "change": "71票4930元仍是负债",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "七十一张，已收票款四千九百三十元。"
+          }
+        ]
+      },
+      {
+        "event": "真实老观众来询问",
+        "choice": "许照拒绝虚假再开保证",
+        "change": "观众需求具体化",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "我只想知道，戏院是不是以后都没有戏了。"
+          }
+        ]
+      },
+      {
+        "event": "月景从台上搬离",
+        "choice": "曹文修与许照选择停用",
+        "change": "技术方案缩减",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "月景停用待检查。勿擅自吊挂。"
+          }
+        ]
+      },
+      {
+        "event": "姜未央实际离场",
+        "choice": "闻秋棠签收说明",
+        "change": "退出不被情分拦住",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "这一次，没有人把她拦住。"
+          }
+        ]
+      },
+      {
+        "event": "公告正式发布",
+        "choice": "田也给观众退改选择",
+        "change": "未退款但完成告知",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "请勿按原场次到场。"
+          }
+        ]
+      },
+      {
+        "event": "经营者提出一个月",
+        "choice": "许照接受预算约束",
+        "change": "有限新戏试验而非无条件复开",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "一个月。"
+          }
+        ]
+      },
+      {
+        "event": "空台写明先退票",
+        "choice": "许照优先处理退款实际责任",
+        "change": "下一章有明确兑现",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "明天，先把票退。"
+          }
+        ]
+      }
+    ],
+    "plan_comparison": "预定的五大段实际拆成十个场景：辞演、试唱失败、师生冲突、现金核算、老观众、停用装置、员工离场、公开告知、有条件试验、收灯结尾。退改尚未完成，必须于下一章真做。",
+    "reader": {
+      "mode": "same_context_approximation",
+      "limitation": "同一模型曾参与写作与审读，不是独立读者或真实咪咕编辑。",
+      "coverage": {
+        "1": {
+          "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "mode": "full_text"
+        }
+      },
+      "understanding": "主角不是全能歌者或经营者，头牌退出后旧戏无法照演，读者能跟随人物看到真实戏院和观众的处境。",
+      "information_load": "票款与欠款数额相对集中，但穿插真实老人到访、灯景搬动，第二章不宜再次仅会议解释。",
+      "promise_delivery": "首章如实通知原戏无法交付；正式退款、原创剧本与合法售票场仍未发生。",
+      "evidence": [
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "明天那场，我不唱了。"
+        },
+        {
+          "chapter": 1,
+          "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+          "quote": "明天，先把票退。"
+        }
+      ],
+      "issues": [
+        {
+          "severity": "suggestion",
+          "status": "open",
+          "reason": "票务段落解释稍多，但不阻断理解；第二章需大量实际观众行动和退款回执。",
+          "evidence": {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "七十一张，已收票款四千九百三十元。"
+          }
+        }
+      ]
+    },
+    "character_causality": {
+      "opposition": {
+        "status": "reviewed",
+        "conclusion": "闻秋棠不愿失去十年告别戏却最终签收退出，有职业权责而不是简单反派",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "你是不是站她那边？"
+          }
+        ]
+      },
+      "dialogue": {
+        "status": "reviewed",
+        "conclusion": "姜未央守住自由，闻秋棠维护情感，田也考虑票款，声音和诉求不同",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "我也知道它不能把我的后半辈子都唱进去。"
+          }
+        ]
+      },
+      "aftermath": {
+        "status": "reviewed",
+        "conclusion": "演员离开、停演通知和月景停用都是真实不可逆变化",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "这一次，没有人把她拦住。"
+          }
+        ]
+      }
+    },
+    "history": {
+      "index_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "queries": [],
+      "comparisons": [],
+      "no_match_reason": "这是新书第一章，当前仓库正式冻结前文为0章；无同书前章可比，后续须全文回读本章。"
+    },
+    "reader_updates": [
+      {
+        "kind": "observed",
+        "statement": "原主演宣布辞演，次日晚旧戏无法按原阵容交付",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "明天那场，我不唱了。"
+          }
+        ]
+      },
+      {
+        "kind": "observed",
+        "statement": "已售71票4930元仍需退改",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "七十一张，已收票款四千九百三十元。"
+          }
+        ]
+      },
+      {
+        "kind": "observed",
+        "statement": "旧月景停用待检，团队不能冒险上台",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "月景停用待检查。勿擅自吊挂。"
+          }
+        ]
+      },
+      {
+        "kind": "claim",
+        "statement": "闻秋棠给一个月有限时间试验新短戏",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "一个月。"
+          }
+        ]
+      },
+      {
+        "kind": "uncertain",
+        "statement": "姜未央的实际私人原因未向女主证实",
+        "evidence": [
+          {
+            "chapter": 1,
+            "sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+            "quote": "我不能替她说原因。"
+          }
+        ]
+      }
+    ],
+    "reader_update_note": "首章揭示的仅是原戏停演、真实售票义务与有限试验，没写旧责任已了或新戏已成。",
+    "surface_findings": []
+  }
+}

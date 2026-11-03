@@ -1,0 +1,144 @@
+{
+  "chapter": 1,
+  "title": "她说今晚不唱了",
+  "stage": "S01",
+  "base_revision": 3,
+  "canon_sha256": "294bc8fde3b208d96dd375dc55e8bdd464ba23285d7e7ae8c826bf7a4a18a5ce",
+  "text_sha256": "98c754f148f5585c20f1210ffbe939bef9f37982297d32dacd943bb4172a4a04",
+  "complete": true,
+  "story_time_end": 1,
+  "summary": "2026年4月18日，青灯戏院原定次日晚的告别场主演姜未央辞演。许照暂停排练，陈小满试唱失败。闻秋棠正式签收退出说明，具体责任待核；田也确认71票4930元仍有退改责任，账面32400元含该款，旧应付约12000元。乔奶奶到访关心未来演出，旧月景停用；戏院当晚停售遗留票并通知原场不能履约，但并未实际完成退款。闻秋棠给许照一个月的有限新戏试验，先处理旧票。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [],
+    "conclusion": "已读本章9462字全文和新书canon／roadmap；每次停演、人员离开、票款义务和权限均保留可核后果。人工审读为same_context_approximation，不冒充独立读者。第二章必须真正处理一批退款或经本人同意的改签，不能重复议事。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "show:Apr19:cancelled",
+      "value": "姜未央退出，原定次日《长街月》无法按原阵容履约，实际退改尚未完成",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "明天那场，我不唱了。"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:71:4930",
+      "value": "71张预售票对应4930元退款或履约义务，不能冒充已退",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "七十一张，已收票款四千九百三十元。"
+    },
+    {
+      "kind": "state",
+      "key": "money:opening",
+      "value": "账面32400元含4930元责任，旧应付12000元左右，月度基本成本估26800元",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "账面可动三万二千四百。这四千九百三十包含在里面"
+    },
+    {
+      "kind": "fact",
+      "key": "stage:moon:stopped",
+      "value": "旧月景已停用待专业检查，不可用于明晚升降",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "月景停用待检查。勿擅自吊挂。"
+    },
+    {
+      "kind": "state",
+      "key": "Jiang:exit",
+      "value": "姜未央已递交退出说明，自愿离场，合同责任待核",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "这一次，没有人把她拦住。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "Jiang:private_cause",
+      "value": "许照不知姜未央具体私人原因，不能代她公开医疗详情",
+      "holder": "许照",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "我不能替她说原因。"
+    },
+    {
+      "kind": "state",
+      "key": "ticket:notice",
+      "value": "停售遗留渠道并发布停演告知，仍无凭据称退款到账",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "请勿按原场次到场。"
+    },
+    {
+      "kind": "state",
+      "key": "trial:one-month",
+      "value": "经营者限一个月试行新短戏，尚无完整原创剧本与售票场",
+      "holder": "",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "一个月。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "Qiao:audience-needs",
+      "value": "乔奶奶关心新戏是否较短以及散场时间，不代表同意改签",
+      "holder": "许照",
+      "valid_from": 1,
+      "valid_until": null,
+      "quote": "下次若有短一点的戏，别太晚散。"
+    }
+  ],
+  "progression": {
+    "goal": "完成原定告别场并对观众负责",
+    "obstacle": "主演辞演、新人不能替演、权责和经费不足",
+    "method": "停止原排练，核实票务和实物，在有权经营者确认后停售并如实公告",
+    "choice": "不强迫姜未央，不拿未授权录音蒙混，不让不具备能力的新人硬唱；先退改旧票再制作新戏",
+    "result": "原演出确定不按原阵容举行，公告已发，新戏试验获一个月条件性许可",
+    "consequence": "71张票对应钱与信任仍待处理，观众失望，月景停用，演员离场",
+    "next_options": "CH002逐票核实际退票或本人确认的改签；CH003开始可实现的原创小段",
+    "scene_function": "辞演钩、试唱失败、观众反馈、道具停用、公开通知、试验约束与退票悬念"
+  },
+  "thread_events": [
+    {
+      "id": "P01-original-show",
+      "action": "plant",
+      "description": "原演出无法按原阵容履约，实际退改需下一章兑现",
+      "quote": "请勿按原场次到场。"
+    },
+    {
+      "id": "P02-ticket-refunds",
+      "action": "plant",
+      "description": "71张票4930元仍须处理，不能只通知不退款",
+      "quote": "明天，先把票退。"
+    },
+    {
+      "id": "P03-new-short-show",
+      "action": "plant",
+      "description": "一个月的合法原创新短场最迟第十章交付",
+      "quote": "一个月。"
+    },
+    {
+      "id": "P04-Jiang-exit",
+      "action": "plant",
+      "description": "姜未央合同责任及未解释的原因须在第七章前交代",
+      "quote": "合同该怎么算，您让田也按原来约定核。"
+    },
+    {
+      "id": "P05-content-rights",
+      "action": "plant",
+      "description": "原剧录音与原创文本和音乐版权需第四章前核清",
+      "quote": "内部练习不等于明晚能拿来放给买票的人。"
+    }
+  ],
+  "stage_closing": false
+}

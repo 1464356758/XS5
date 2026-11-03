@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 5,
+  "revision": 6,
   "book_id": "5afdc2a3-0b3a-4e45-bbd0-f458aff8f3c3",
-  "phase": "PLANNING",
+  "phase": "WAITING_NEXT",
   "platform": "migu",
   "selected_topic": {
     "id": "T02",
@@ -22,7 +22,7 @@
   },
   "research_path": "research/platform_refresh_20261103.json",
   "topics_path": "research/topics_refresh_20261103.json",
-  "chapter": 1,
+  "chapter": 2,
   "history": [
     {
       "at": "2026-11-03T06:30:00+00:00",
@@ -59,9 +59,15 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。"
+    },
+    {
+      "at": "2026-11-03T14:37:03+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "CH001《她说今晚不唱了》通过原V4.3审读和release-check，已采用冻结；未登记咪咕平台发布。"
     }
   ],
-  "detail": "已正式选定T02；全新canon、人物事实账、100章十阶段路线与前五章细案已保存，正文0章，等待作者开始第一章。",
-  "next_action": "等待作者明确命令“开始第一章”；在此之前不生成候选正文、不冻结章节、不新建日更任务。",
-  "updated_at": "2026-11-03T10:10:12Z"
+  "detail": "CH001《她说今晚不唱了》通过原V4.3审读和release-check，已采用冻结；未登记咪咕平台发布。",
+  "next_action": "继续CH002《七十一张票》，实际办理首批合法退改并留存未结责任。",
+  "updated_at": "2026-11-03T14:37:03+00:00"
 }
